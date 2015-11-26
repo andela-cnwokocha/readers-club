@@ -11,6 +11,13 @@ In a given readers club, books are distributed to members (Students or Staffs) b
 
 This project implements classes that defines properties, and behaviors of the club and its members.  
 
+## Classes and their Methods 
+> #### Member class
+
+###### About:   
+This class defines behaviors and properties applicable to all club members (Students or Staffs). It is an abstract class extended by the Student and Staff classes.   
+###### Methods:
+The properties applicable to all members are, the email address, member's full name, date of birth, date of registration, email address, phone number, and the gender. Hence, the methods defined in this class are mostly getters and setters for these properties. Finally, members can borrow and return a book, so there're methods for members to do this.
 
 
 
