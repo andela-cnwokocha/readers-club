@@ -12,8 +12,7 @@ abstract public class Member {
   private String email;
   private String phoneNumber;
   private Date dateOfReg;
-  /*private boolean borrowed = false;
-  private int aStaff = 0;*/
+
 
   public Member(String fullName, char gender, String dateOfBirth, String phoneNumber, String email) {
     this.fullName = fullName;

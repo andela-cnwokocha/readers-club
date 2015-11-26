@@ -21,7 +21,7 @@ public class Book {
   private void setBookName(String bookname) {
     this.bookName = bookname;
   }
-  private String getBookName() {
+  public String getBookName() {
     return bookName;
   }
 
@@ -29,7 +29,7 @@ public class Book {
   private void setAuthor(String author) {
     this.author = author;
   }
-  private String getAuthor() {
+  public String getAuthor() {
     return author;
   }
 
@@ -37,15 +37,25 @@ public class Book {
   private void setBookCopies(Integer numberOfBookCopies) {
     this.numberOfBookCopies = numberOfBookCopies;
   }
-  private int getBookCopies() {
+  public int getNumberOfBookCopies() {
     return numberOfBookCopies;
   }
 
   // Set and Get the ISBN number of the book
-  public void setIsbnNumber(String isbnNumber) {
+  private void setIsbnNumber(String isbnNumber) {
     this.isbnNumber = isbnNumber;
   }
   public String getIsbnNumber() {
     return isbnNumber;
+  }
+
+  // Increment the number of book copies
+  public void incrementBookCopies() {
+    numberOfBookCopies++;
+  }
+
+  // Decrement the number of book copies
+  public void decrementBookCopies() {
+    numberOfBookCopies--;
   }
 }
