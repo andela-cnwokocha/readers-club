@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readers-club.iml" afterPath="$PROJECT_DIR$/readers-club.iml" />
-    </list>
+    <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="" />
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,7 +25,7 @@
       <file leaf-file-name="Member.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8184874">
+            <state vertical-scroll-proportion="1.107563">
               <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
               <folding>
                 <element signature="method#Member#0;class#Member#0" expanded="false" />
@@ -500,7 +494,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8184874">
+        <state vertical-scroll-proportion="1.107563">
           <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
           <folding>
             <element signature="method#Member#0;class#Member#0" expanded="false" />
