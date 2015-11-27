@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ikemefuna.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/clubmanager/ClubManager.class" afterPath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/clubmanager/ClubManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/clubmanager/ClubManagerTest.class" afterPath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/clubmanager/ClubManagerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
     </list>
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#529#530#0" expanded="true" />
@@ -76,8 +71,8 @@
       <file leaf-file-name="ClubManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62724936">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.6426735">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,8 +119,8 @@
         <option value="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/main/Book.java" />
         <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/main/BookTest.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
         <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
       </list>
     </option>
   </component>
@@ -304,7 +299,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClubManagerTest.testCreateAboutBookFile">
+  <component name="RunManager" selected="JUnit.ClubManagerTest.testAddBookToLibrary">
     <configuration default="false" name="BookTest.testDecrementBookCopies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -688,9 +683,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testCreateAboutBookFile" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testMakeAboutBookFile" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddBookToLibrary" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddBookToLibrary" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testCreateAboutBookFile" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testMakeAboutBookFile" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGetLibrarySize" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BookTest.testDecrementBookCopies" />
       </list>
@@ -713,11 +708,11 @@
     <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.26 at 22h 48m 51s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 02h 28m 51s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 02h 19m 32s.xml">
       <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testGetLibrarySize - 2015.11.26 at 20h 41m 58s.xml">
-      <configuration name="ClubManagerTest.testGetLibrarySize" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.26 at 23h 57m 14s.xml">
       <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
@@ -851,10 +846,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35833332">
+          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
@@ -865,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62724936">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.6426735">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
