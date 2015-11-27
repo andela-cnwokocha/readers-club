@@ -27,7 +27,11 @@ public class ClubManager {
   // Add a book to the book list
   public void addBookToLibrary(Book book) {
     String bookName = book.getBookName();
-    this.makeAboutBookFile(bookName);
+    String directory = Paths.get(".").toAbsolutePath().normalize().toString();
+    boolean fileExists = new File(directory, bookName + ".txt").exists();
+    if(!fileExists){
+      this.makeAboutBookFile(bookName);
+    }
   }
 
   //  create a file with details of the book
