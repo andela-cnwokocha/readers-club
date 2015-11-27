@@ -5,6 +5,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 /**
  * Created by chidi on 11/26/15.
@@ -32,24 +33,12 @@ public class ClubManager {
     if(!fileExists){
       boolean isFileCreated = this.makeAboutBookFile(bookName);
       if(isFileCreated) {
-        this.books.add(book); // add book to the library
-        File createdFile = new File(currentDirectory + "/" + bookName + ".txt"); // create file connection
-        BufferedWriter bufferedWriter = null; // connect to bufferedwriter
-        String detailsToWrite = "Chidi did it"; // Detailed book info to write
-        try {
-          FileWriter fileWriter = new FileWriter(createdFile, true);
-          bufferedWriter = new BufferedWriter(fileWriter);
-          bufferedWriter.write("Author: " + book.getAuthor());
-          PrintWriter printWriter = new PrintWriter(bufferedWriter);
-          printWriter.println("");
-          printWriter.println("Rating: ");
-          printWriter.println("Book Info: " + detailsToWrite);
-          printWriter.close();
-          isAddedSuccessfully = true;
-          System.out.println("Chidi did it");
-        }catch(IOException ioe) {
-          ioe.printStackTrace();
-        }
+        this.books.add(book);
+        String author = book.getAuthor();
+        int numberOfCopies = book.getNumberOfBookCopies();
+        File createdFile = new File(currentDirectory + "/" + bookName + ".txt");
+        this.addBookInfo(createdFile, author, numberOfCopies);
+        isAddedSuccessfully = true;
       }
     }
     return isAddedSuccessfully;
@@ -67,10 +56,29 @@ public class ClubManager {
     return isCreated;
   }
 
-  // Write details of file to the file
-  private void addBookInfo(File bookInfoFile) {
-
+  // write details of file to a book to its info file
+  private void addBookInfo(File bookInfoFile, String author, int numberOfBookCopies) {
+    BufferedWriter bufferedWriter = null; 
+    String detailsToWrite = this.getBookreview();
+    try {
+      FileWriter fileWriter = new FileWriter(bookInfoFile, true);
+      bufferedWriter = new BufferedWriter(fileWriter);
+      bufferedWriter.write("Author: " + author);
+      PrintWriter printWriter = new PrintWriter(bufferedWriter);
+      printWriter.println("");
+      printWriter.println("Rating: ");
+      printWriter.println("Available copies: " + numberOfBookCopies);
+      printWriter.println("Book Info: " + detailsToWrite);
+      printWriter.close();
+    }catch(IOException ioe) {
+      ioe.printStackTrace();
+    }
   }
 
-
+  //asks for user review about book and returns it
+  private String getBookreview() {
+    Scanner reviewScanner = new Scanner(System.in);
+    String review = reviewScanner.next();
+    return review;
+  }
 }

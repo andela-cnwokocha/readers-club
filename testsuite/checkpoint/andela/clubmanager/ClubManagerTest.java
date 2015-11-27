@@ -54,7 +54,5 @@ public class ClubManagerTest {
     }
   }
 
-  // check if details about book is added to the file
-
 
 }
