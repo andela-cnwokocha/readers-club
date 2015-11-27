@@ -25,7 +25,7 @@ public class ClubManagerTest {
 
   }
    @Test
-  //check if a book is added to the book list
+  //check if a book is added to the book list with details about the book
   public void testAddBookToLibrary() throws Exception {
      try {
        ClubManager club = new ClubManager();

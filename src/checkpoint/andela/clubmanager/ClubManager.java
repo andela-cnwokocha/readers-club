@@ -1,13 +1,10 @@
 package checkpoint.andela.clubmanager;
 import checkpoint.andela.main.*;
 
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.nio.file.Paths;
-import java.io.File;
-import java.io.IOException;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 
 /**
  * Created by chidi on 11/26/15.
@@ -15,6 +12,7 @@ import java.io.FileWriter;
 public class ClubManager {
   private ArrayList<Book> books;
   private ArrayList <Member> members;
+  private String currentDirectory = Paths.get(".").toAbsolutePath().normalize().toString();
 
   public ClubManager() {
     books = new ArrayList<Book>();
@@ -30,25 +28,49 @@ public class ClubManager {
   public boolean addBookToLibrary(Book book) {
     boolean success = false;
     String bookName = book.getBookName();
-    String directory = Paths.get(".").toAbsolutePath().normalize().toString();
-    boolean fileExists = new File(directory, bookName + ".txt").exists();
+    boolean fileExists = new File(currentDirectory, bookName + ".txt").exists();
     if(!fileExists){
-      this.books.add(book); // add book to the library
-
-      success = true;
+      boolean isFileCreated = this.makeAboutBookFile(bookName);
+      if(isFileCreated) {
+        this.books.add(book); // add book to the library
+        File createdFile = new File(currentDirectory + "/" + bookName + ".txt"); // create file connection
+        BufferedWriter bufferedWriter = null; // connect to bufferedwriter
+        String detailsToWrite = "Chidi did it"; // Detailed book info to write
+        try {
+          FileWriter fileWriter = new FileWriter(createdFile, true);
+          bufferedWriter = new BufferedWriter(fileWriter);
+          bufferedWriter.write("Author: " + book.getAuthor());
+          PrintWriter printWriter = new PrintWriter(bufferedWriter);
+          printWriter.println("");
+          printWriter.println("Rating: ");
+          printWriter.println("Book Info: ");
+          printWriter.close();
+          success = true;
+          System.out.println("Chidi did it");
+        }catch(IOException ioe) {
+          ioe.printStackTrace();
+        }
+      }
     }
     return success;
   }
 
-  //  create a file with details of the book
-  private void makeAboutBookFile(String bookName) {
+  // create a file with details of the book
+  private boolean makeAboutBookFile(String bookName) {
+    boolean isCreated = false;
     try{
-      String directory = Paths.get(".").toAbsolutePath().normalize().toString();
-      File file = new File(directory + "/" + bookName + ".txt");
-      boolean isCreated = file.createNewFile();
+      File file = new File(currentDirectory + "/" + bookName + ".txt");
+      isCreated = file.createNewFile();
     }catch(IOException ioe) {
       ioe.printStackTrace();
     }
+    return isCreated;
   }
+
+  // Write details of file to the file
+  private void addBookInfo(File bookInfoFile) {
+
+  }
+
 
 }
