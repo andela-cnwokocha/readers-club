@@ -26,7 +26,7 @@ public class ClubManager {
 
   // Add a book to the book list
   public boolean addBookToLibrary(Book book) {
-    boolean success = false;
+    boolean isAddedSuccessfully = false;
     String bookName = book.getBookName();
     boolean fileExists = new File(currentDirectory, bookName + ".txt").exists();
     if(!fileExists){
@@ -43,16 +43,16 @@ public class ClubManager {
           PrintWriter printWriter = new PrintWriter(bufferedWriter);
           printWriter.println("");
           printWriter.println("Rating: ");
-          printWriter.println("Book Info: ");
+          printWriter.println("Book Info: " + detailsToWrite);
           printWriter.close();
-          success = true;
+          isAddedSuccessfully = true;
           System.out.println("Chidi did it");
         }catch(IOException ioe) {
           ioe.printStackTrace();
         }
       }
     }
-    return success;
+    return isAddedSuccessfully;
   }
 
   // create a file with details of the book
