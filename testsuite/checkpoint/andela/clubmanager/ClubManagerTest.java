@@ -30,12 +30,12 @@ public class ClubManagerTest {
      try {
        ClubManager club = new ClubManager();
        Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
-       Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
+       //Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
        club.addBookToLibrary(book);
-       Thread.sleep(3000);
-       club.addBookToLibrary(book2);
+       //Thread.sleep(1000);
+       //club.addBookToLibrary(book2);
        assertTrue(club.addBookToLibrary(book));
-       //assertEquals(club.getLibrarySize(), 2);
+       assertEquals(club.getLibrarySize(), 1);
      }catch(Exception e) {
        e.printStackTrace();
      }
