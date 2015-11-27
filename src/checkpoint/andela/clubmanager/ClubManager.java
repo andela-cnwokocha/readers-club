@@ -29,9 +29,9 @@ public class ClubManager {
     String bookName = book.getBookName();
     String directory = Paths.get(".").toAbsolutePath().normalize().toString();
     boolean fileExists = new File(directory, bookName + ".txt").exists();
-    if(!fileExists){
+    if(fileExists){
+    }else
       this.makeAboutBookFile(bookName);
-    }
   }
 
   //  create a file with details of the book
