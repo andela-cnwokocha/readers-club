@@ -15,7 +15,6 @@ import static org.junit.Assert.*;
  */
 public class ClubManagerTest {
 
-
   @Test
   /* check the number of books in the library */
   public void testGetLibrarySize() throws Exception {
@@ -35,13 +34,12 @@ public class ClubManagerTest {
        club.addBookToLibrary(book);
        Thread.sleep(3000);
        club.addBookToLibrary(book2);
+       assertTrue(club.addBookToLibrary(book));
        assertEquals(club.getLibrarySize(), 2);
      }catch(Exception e) {
        e.printStackTrace();
      }
    }
-
-
   @Test
   // check if an .txt file about the book is created
   public void testCreateAboutBookFile() throws Exception {
@@ -57,5 +55,8 @@ public class ClubManagerTest {
       e.printStackTrace();
     }
   }
+
+  // check if details about book is added to the file
+
 
 }
