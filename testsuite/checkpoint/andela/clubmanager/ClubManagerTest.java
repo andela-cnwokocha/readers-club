@@ -37,17 +37,19 @@ public class ClubManagerTest {
   }
 
   @Test
-  // check if a file with the book name is created
-  public void testMakeAboutBookFile() throws Exception {
+  // check if an .txt file about the book is created
+  public void testCreateAboutBookFile() throws Exception {
     ClubManager club = new ClubManager();
     Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
-    club.makeAboutBookFile("chidi");
     try {
+      club.addBookToLibrary(book);
       String directory = Paths.get(".").toAbsolutePath().normalize().toString();
-      boolean fileExists = new File(directory, "chidi.txt").exists();
+      String bookName = book.getBookName();
+      boolean fileExists = new File(directory, bookName + ".txt").exists();
       assertTrue(fileExists);
     }catch(Exception e) {
       e.printStackTrace();
     }
   }
+
 }

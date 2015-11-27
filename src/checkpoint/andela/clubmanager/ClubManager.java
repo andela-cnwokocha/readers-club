@@ -26,11 +26,13 @@ public class ClubManager {
 
   // Add a book to the book list
   public void addBookToLibrary(Book book) {
-    this.books.add(book);
+    String bookName = book.getBookName();
+    this.makeAboutBookFile(bookName);
+    //this.books.add(book);
   }
 
   //  create a file with details of the book
-  public void makeAboutBookFile(String bookName) {
+  private void makeAboutBookFile(String bookName) {
     try{
       String directory = Paths.get(".").toAbsolutePath().normalize().toString();
       File file = new File(directory + "/" + bookName + ".txt");
