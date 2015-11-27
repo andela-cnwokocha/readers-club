@@ -31,8 +31,8 @@ public class ClubManagerTest {
        ClubManager club = new ClubManager();
        Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
        Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
-       //assertTrue(club.addBookToLibrary(book2));
-       assertTrue(club.addBookToLibrary(book));
+       assertTrue(club.addBookToLibrary(book2));
+       //assertTrue(club.addBookToLibrary(book));
        assertEquals(club.getLibrarySize(), 1);
      }catch(Exception e) {
        e.printStackTrace();
@@ -54,5 +54,10 @@ public class ClubManagerTest {
     }
   }
 
+  @Test
+  public void sayhelloTest() throws Exception {
+    System.out.print("Hello my friend");
+    assertEquals(3,3);
+  }
 
 }

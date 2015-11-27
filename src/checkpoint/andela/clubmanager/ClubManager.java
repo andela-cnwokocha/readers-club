@@ -59,7 +59,7 @@ public class ClubManager {
   // write details of file to a book to its info file
   private void addBookInfo(File bookInfoFile, String author, int numberOfBookCopies) {
     BufferedWriter bufferedWriter = null;
-    String detailsToWrite = "This is failing";
+    String detailsToWrite = getBookReview();
     try {
       FileWriter fileWriter = new FileWriter(bookInfoFile, true);
       bufferedWriter = new BufferedWriter(fileWriter);
@@ -76,9 +76,10 @@ public class ClubManager {
   }
 
   //asks for user review about book and returns it
- /* private String getBookReview() {
+  private String getBookReview() {
     Scanner reviewScanner = new Scanner(System.in);
+    System.out.print("Enter the review please: ");
     String review = reviewScanner.nextLine();
     return review;
-  }*/
+  }
 }
