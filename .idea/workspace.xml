@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ikemefuna.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/clubmanager/ClubManager.class" afterPath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/clubmanager/ClubManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/clubmanager/ClubManagerTest.class" afterPath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/clubmanager/ClubManagerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
     </list>
     <ignored path="readers-club.iws" />
@@ -20,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/readers-club$ClubManagerTest_testAddBookToLibrary.coverage" NAME="ClubManagerTest.testAddBookToLibrary Coverage Results" MODIFIED="1448591950225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>checkpoint.andela.clubmanager.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -63,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#529#530#0" expanded="true" />
@@ -76,8 +77,8 @@
       <file leaf-file-name="ClubManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62724936">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.2596401">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,7 +305,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClubManagerTest.testCreateAboutBookFile">
+  <component name="RunManager" selected="JUnit.ClubManagerTest.testAddBookToLibrary">
     <configuration default="false" name="BookTest.testDecrementBookCopies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -688,9 +689,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testCreateAboutBookFile" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testMakeAboutBookFile" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddBookToLibrary" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddBookToLibrary" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testCreateAboutBookFile" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testMakeAboutBookFile" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGetLibrarySize" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BookTest.testDecrementBookCopies" />
       </list>
@@ -710,35 +711,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.26 at 22h 48m 51s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 21m 34s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 02h 19m 32s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 25m 06s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 30m 00s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 32m 30s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 12s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 15s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 28s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 43s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 21m 25s.xml">
       <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testGetLibrarySize - 2015.11.26 at 20h 41m 58s.xml">
-      <configuration name="ClubManagerTest.testGetLibrarySize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.26 at 23h 57m 14s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 34m 36s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 45m 59s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 54m 39s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 56m 28s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 56m 46s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 57m 00s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 37m 52s.xml">
+      <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +753,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977912" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22162986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -782,7 +784,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,10 +853,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35833332">
+          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
@@ -865,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62724936">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.2596401">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
