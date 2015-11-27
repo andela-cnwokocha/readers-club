@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Arrowhead.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Ikemefuna.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#529#530#0" expanded="true" />
@@ -71,8 +73,8 @@
       <file leaf-file-name="ClubManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6426735">
-              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.5989717">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -705,26 +707,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.26 at 22h 48m 51s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 02h 28m 51s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 02h 28m 51s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 15m 54s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 21m 34s.xml">
+      <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 25m 06s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 02h 19m 32s.xml">
       <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.26 at 23h 57m 14s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 14m 55s.xml">
+      <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 34m 36s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 45m 59s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 54m 39s.xml">
-      <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 21m 25s.xml">
+      <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ClubManagerTest_testMakeAboutBookFile - 2015.11.27 at 01h 56m 28s.xml">
       <configuration name="ClubManagerTest.testMakeAboutBookFile" configurationId="JUnit" />
@@ -747,7 +749,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22162986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -777,7 +779,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -857,7 +859,7 @@
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#529#530#0" expanded="true" />
@@ -868,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6426735">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.5989717">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
