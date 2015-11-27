@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
-    </list>
+    <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="" />
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,10 +46,6 @@
               <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
               <folding>
                 <element signature="method#Book#0;class#Book#0" expanded="false" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
                 <element signature="e#1458#1459#0" expanded="true" />
                 <element signature="e#1488#1489#0" expanded="true" />
               </folding>
@@ -64,11 +57,9 @@
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,10 +68,11 @@
       <file leaf-file-name="ClubManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2596401">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.6169666">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#testGetLibrarySize#0;class#ClubManagerTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -133,7 +125,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="46" />
     <option name="y" value="14" />
-    <option name="width" value="1315" />
+    <option name="width" value="1317" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -162,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,7 +273,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,39 +703,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 21m 34s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 10h 18m 03s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 25m 06s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 10h 35m 18s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 30m 00s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 12h 56m 37s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 32m 30s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 13h 07m 23s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 12s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 13h 09m 30s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 15s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 13h 14m 47s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 28s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 13h 15m 52s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 03h 39m 43s.xml">
+    <history-entry file="ClubManagerTest_testAddBookToLibrary - 2015.11.27 at 13h 18m 10s.xml">
       <configuration name="ClubManagerTest.testAddBookToLibrary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 21m 25s.xml">
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 10h 21m 22s.xml">
       <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 03h 37m 52s.xml">
+    <history-entry file="ClubManagerTest_testCreateAboutBookFile - 2015.11.27 at 10h 43m 29s.xml">
       <configuration name="ClubManagerTest.testCreateAboutBookFile" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="14" width="1315" height="728" extended-state="0" />
+    <frame x="46" y="14" width="1317" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -753,11 +745,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977912" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22162986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22129278" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -767,6 +758,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2703732" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
@@ -784,7 +776,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -793,6 +785,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#Member#0;class#Member#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+          <folding>
+            <element signature="method#Book#0;class#Book#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -809,10 +823,6 @@
           <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
           <folding>
             <element signature="method#Book#0;class#Book#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
             <element signature="e#1458#1459#0" expanded="true" />
             <element signature="e#1488#1489#0" expanded="true" />
           </folding>
@@ -829,16 +839,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35833332">
+          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
           <folding>
             <element signature="method#Book#0;class#Book#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
             <element signature="e#1458#1459#0" expanded="true" />
             <element signature="e#1488#1489#0" expanded="true" />
           </folding>
@@ -853,32 +866,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35833332">
-          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2596401">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.6169666">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#testGetLibrarySize#0;class#ClubManagerTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

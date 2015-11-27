@@ -15,7 +15,6 @@ import static org.junit.Assert.*;
  */
 public class ClubManagerTest {
 
-
   @Test
   /* check the number of books in the library */
   public void testGetLibrarySize() throws Exception {
@@ -26,27 +25,24 @@ public class ClubManagerTest {
 
   }
    @Test
-  //check if a book is added to the book list
+  //check if a book is added to the book list with details about the book
   public void testAddBookToLibrary() throws Exception {
      try {
        ClubManager club = new ClubManager();
        Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
        Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
-       club.addBookToLibrary(book);
-       Thread.sleep(3000);
-       club.addBookToLibrary(book2);
-       assertEquals(club.getLibrarySize(), 1);
+       assertTrue(club.addBookToLibrary(book2));
+       assertTrue(club.addBookToLibrary(book));
+       assertEquals(club.getLibrarySize(), 2);
      }catch(Exception e) {
        e.printStackTrace();
      }
    }
-
-
   @Test
   // check if an .txt file about the book is created
   public void testCreateAboutBookFile() throws Exception {
     ClubManager club = new ClubManager();
-    Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
+    Book book = new Book("Lebweka", "Chidiebere", 21, "ISBN-5786-686");
     try {
       club.addBookToLibrary(book);
       String directory = Paths.get(".").toAbsolutePath().normalize().toString();
@@ -57,5 +53,8 @@ public class ClubManagerTest {
       e.printStackTrace();
     }
   }
+
+  // check if details about book is added to the file
+
 
 }
