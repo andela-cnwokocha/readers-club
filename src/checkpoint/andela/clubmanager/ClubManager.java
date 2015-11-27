@@ -28,7 +28,6 @@ public class ClubManager {
   public void addBookToLibrary(Book book) {
     String bookName = book.getBookName();
     this.makeAboutBookFile(bookName);
-    //this.books.add(book);
   }
 
   //  create a file with details of the book
