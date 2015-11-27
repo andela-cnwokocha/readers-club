@@ -35,7 +35,7 @@ public class ClubManagerTest {
        club.addBookToLibrary(book);
        Thread.sleep(3000);
        club.addBookToLibrary(book2);
-       assertEquals(club.getLibrarySize(), 2);
+       assertEquals(club.getLibrarySize(), 1);
      }catch(Exception e) {
        e.printStackTrace();
      }
