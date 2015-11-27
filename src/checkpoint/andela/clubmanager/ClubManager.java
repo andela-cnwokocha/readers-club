@@ -3,6 +3,9 @@ import checkpoint.andela.main.*;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.nio.file.Paths;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by chidi on 11/26/15.
@@ -24,6 +27,17 @@ public class ClubManager {
   // Add a book to the book list
   public void addBookToLibrary(Book book) {
     this.books.add(book);
+  }
+
+  //  create a file with details of the book
+  public void makeAboutBookFile(String bookName) {
+    try{
+      String directory = Paths.get(".").toAbsolutePath().normalize().toString();
+      File file = new File(directory + "/" + bookName + ".txt");
+      boolean isCreated = file.createNewFile();
+    }catch(IOException ioe) {
+      ioe.printStackTrace();
+    }
   }
 
 }

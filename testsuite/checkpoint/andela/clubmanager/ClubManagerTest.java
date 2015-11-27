@@ -3,6 +3,9 @@ package checkpoint.andela.clubmanager;
 import checkpoint.andela.main.Book;
 import org.junit.Test;
 
+import java.io.File;
+import java.nio.file.Paths;
+
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -33,4 +36,18 @@ public class ClubManagerTest {
      assertEquals(club.getLibrarySize(), 2);
   }
 
+  @Test
+  // check if a file with the book name is created
+  public void testMakeAboutBookFile() throws Exception {
+    ClubManager club = new ClubManager();
+    Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
+    club.makeAboutBookFile("chidi");
+    try {
+      String directory = Paths.get(".").toAbsolutePath().normalize().toString();
+      boolean fileExists = new File(directory, "chidi.txt").exists();
+      assertTrue(fileExists);
+    }catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
 }
