@@ -28,13 +28,19 @@ public class ClubManagerTest {
    @Test
   //check if a book is added to the book list
   public void testAddBookToLibrary() throws Exception {
-     ClubManager club = new ClubManager();
-     Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
-     Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
-     club.addBookToLibrary(book);
-     club.addBookToLibrary(book2);
-     assertEquals(club.getLibrarySize(), 2);
-  }
+     try {
+       ClubManager club = new ClubManager();
+       Book book = new Book("Ikemefuna", "Chidiebere", 21, "ISBN-5786-686");
+       Book book2 = new Book("Arrowhead", "Dayo Ajere", 3, "ISBN-576-79-897");
+       club.addBookToLibrary(book);
+       Thread.sleep(3000);
+       club.addBookToLibrary(book2);
+       assertEquals(club.getLibrarySize(), 2);
+     }catch(Exception e) {
+       e.printStackTrace();
+     }
+   }
+
 
   @Test
   // check if an .txt file about the book is created

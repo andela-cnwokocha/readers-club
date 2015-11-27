@@ -30,8 +30,10 @@ public class ClubManager {
     String directory = Paths.get(".").toAbsolutePath().normalize().toString();
     boolean fileExists = new File(directory, bookName + ".txt").exists();
     if(fileExists){
-    }else
+    }else{
+      this.books.add(book);
       this.makeAboutBookFile(bookName);
+    }
   }
 
   //  create a file with details of the book
