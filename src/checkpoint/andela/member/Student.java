@@ -9,8 +9,8 @@ public class Student extends Member {
   private String studentID;
   private String schoolClass;
 
-  public Student(String fullname, char gender, String dateofbirth, String phoneNumber, String studentID, String classroom, String email) {
-    super(fullname, gender, dateofbirth, phoneNumber, email);
+  public Student(String fullname, char gender, String dateofbirth, String phoneNumber, String studentID, String classroom) {
+    super(fullname, gender, dateofbirth, phoneNumber);
     this.studentID = studentID;
     this.schoolClass = classroom;
   }
