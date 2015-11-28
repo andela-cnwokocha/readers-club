@@ -73,6 +73,9 @@ abstract public class Member {
   }
 
   // Get the current date
-  protected abstract Date currentDate();
+  public Date currentDate() {
+    Date currentDate = new Date();
+    return currentDate;
+  }
 
 }
