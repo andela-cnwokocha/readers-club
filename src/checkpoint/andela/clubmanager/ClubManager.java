@@ -1,7 +1,10 @@
 package checkpoint.andela.clubmanager;
 import checkpoint.andela.main.*;
+import checkpoint.andela.member.Staff;
+import checkpoint.andela.member.Student;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 
@@ -11,12 +14,11 @@ import java.util.PriorityQueue;
 public class ClubManager {
   private ArrayList<Book> books;
   private ArrayList <Member> members;
-  private PriorityQueue <Member> bookRequesters;
+  //private ArrayList<>;
 
   public ClubManager() {
     books = new ArrayList<Book>();
     members = new ArrayList<Member>();
-    bookRequesters = new PriorityQueue<Member>();
   }
 
   // Get the number of books in the library
@@ -44,9 +46,5 @@ public class ClubManager {
     return 0;
   }
 
-  /*// Return list of books
-  public ArrayList<Book> getBookList() {
-    return this.books;
-  }*/
 
 }

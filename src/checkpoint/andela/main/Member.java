@@ -9,17 +9,15 @@ abstract public class Member {
   private String fullName;
   private char gender;
   private String dateOfBirth;
-  private String email;
   private String phoneNumber;
   private Date dateOfReg;
 
 
-  public Member(String fullName, char gender, String dateOfBirth, String phoneNumber, String email) {
+  public Member(String fullName, char gender, String dateOfBirth, String phoneNumber) {
     this.fullName = fullName;
     this.gender = gender;
     this.dateOfBirth = dateOfBirth;
     this.phoneNumber = phoneNumber;
-    this.email = email;
     Date theDate = new Date();
     this.dateOfReg = theDate;
   }
@@ -56,13 +54,6 @@ abstract public class Member {
     return dateOfBirth;
   }
 
-  // Set and Get a Member's email address
-  public void setEmail(String email) {
-    this.email = email;
-  }
-  public String getEmail() {
-    return email;
-  }
 
   // Set and get a member's phone number
   public void setPhoneNumber(String phonenumber) {
@@ -76,6 +67,16 @@ abstract public class Member {
   public Date currentDate() {
     Date currentDate = new Date();
     return currentDate;
+  }
+
+  // member borrows a book
+  public String borrowBook(Book book) {
+    return book.getBookName();
+  }
+
+  // member returns book
+  public String returnsBook(Book book) {
+    return book.getBookName();
   }
 
 }

@@ -8,9 +8,9 @@ public class Staff extends Member {
   private Integer staffNumber;
 
   // create the Staff subclass from the Member superclass
-  public Staff(String fullname, char gender, String dateofbirth, String phoneNumber, Integer staffnumber, String email) {
-    super(fullname, gender, dateofbirth, phoneNumber, email);
-    this.staffNumber = staffnumber;
+  public Staff(String fullName, char gender, String dateOfBirth, String phoneNumber, Integer staffNumber) {
+    super(fullName, gender, dateOfBirth, phoneNumber);
+    this.staffNumber = staffNumber;
 
   }
 
@@ -23,7 +23,4 @@ public class Staff extends Member {
   public void setStaffNumber(Integer staffnumber) {
     staffNumber = staffnumber;
   }
-
-  
-
 }
