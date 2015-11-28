@@ -29,11 +29,10 @@ public class ClubManagerTest {
   @Test
   public void testGetNumberOfMembers() throws Exception {
     ClubManager club = new ClubManager();
-
     Staff staff1 = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
     Student student = new Student("Yosin", 'F', "51 09", "0800108333", "06", "JSS3");
-
     club.addMemberToList(staff1);
+    club.addMemberToList(student);
     assertEquals(club.getNumberOfMembers(), 2);
   }
 
@@ -61,13 +60,34 @@ public class ClubManagerTest {
 
   @Test
   public void testGetSizeOfQueue() throws Exception {
+    ClubManager club = new ClubManager();
 
   }
-/*
+
   @Test
-  public void testGetBookList() throws Exception {
+  public void testAddMemberToQueue() throws Exception {
     ClubManager club = new ClubManager();
-    ArrayList<Book> bookArray = new ArrayList<Book>();
-    assertSame(bookArray, club.getBookList());
-  }*/
+    Book book = new Book("ThisBook", "Ikeme", 12, "ISBN-4543-455-533-43");
+
+    Staff staff = new Staff("Tochi", 'F', "51 09", "0800108333", 06);
+    staff.borrowBook(book);
+
+    club.addMemberToQueue(staff);
+
+    assertEquals(club.firstQueueMember("ThisBook"), "Tochi");
+
+  }
+
+  @Test
+  public void testGetFirstQueueMember() throws Exception {
+    ClubManager club = new ClubManager();
+    Book book = new Book("ThisBook", "Ikeme", 12, "ISBN-4543-455-533-43");
+
+    Staff staff = new Staff("Tochi", 'F', "51 09", "0800108333", 06);
+    staff.borrowBook(book);
+
+    club.addMemberToQueue(staff);
+
+    assertEquals(club.firstQueueMember("ThisBook"), "Tochi");
+  }
 }
