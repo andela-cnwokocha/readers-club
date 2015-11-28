@@ -21,22 +21,22 @@ public class ClubManager {
 
   // Get the number of books in the library
   public int getLibrarySize() {
-    return 0;
+    return books.size();
   }
 
   // Get the number of members in the club
   public int getNumberOfMembers() {
-    return 0;
+    return members.size();
   }
 
   // Add a book to the book list
   public void addBookToList(Book book) {
-
+    this.books.add(book);
   }
 
   // Add a member to the member list
   public void addMemberToList(Member member) {
-
+    members.add(member);
   }
 
   // Get the size of the queue
@@ -44,6 +44,9 @@ public class ClubManager {
     return 0;
   }
 
-  // Add a member to the queue
+  /*// Return list of books
+  public ArrayList<Book> getBookList() {
+    return this.books;
+  }*/
 
 }
