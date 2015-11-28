@@ -23,4 +23,5 @@ public class Staff extends Member {
   public void setStaffNumber(Integer staffnumber) {
     staffNumber = staffnumber;
   }
+
 }

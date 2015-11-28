@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
 public class ClubManager {
   private ArrayList<Book> books;
   private ArrayList <Member> members;
-  //private ArrayList<>;
+  private ArrayList<PriorityQueue<Member>> borrowedBooks;
 
   public ClubManager() {
     books = new ArrayList<Book>();
@@ -43,8 +43,27 @@ public class ClubManager {
 
   // Get the size of the queue
   public int getSizeOfQueue() {
-    return 0;
+    return borrowedBooks.size();
   }
+
+  // Let member borrow book
+  public void addMemberToQueue(Member member) {
+    boolean chkBorrowedBook = member.isBookBorrowed();
+    if(chkBorrowedBook){
+      String bookName = member.getBorrowedBook();
+      BookQueue aBooksQueue = new BookQueue();
+      aBooksQueue.addToQueue(member);
+      borrowedBooks.add(aBooksQueue.getBookQue());
+    }
+  }
+
+  // Get the first member of a book's queue
+  public String firstQueueMember(String nameOfBook) {
+    return "";
+  }
+
+  // Get a specified item on the array of borrowed books
+  //public PriorityQueue<Member> getBookQueue
 
 
 }
