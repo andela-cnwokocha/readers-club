@@ -10,7 +10,6 @@ import checkpoint.andela.member.*;
 
 
 public class MemberComparator implements Comparator<Member> {
-
   @Override
   public int compare(Member memberA, Member memberB) {
     if(memberA.getClass() == memberB.getClass()){

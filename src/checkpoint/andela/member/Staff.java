@@ -11,17 +11,13 @@ public class Staff extends Member {
   public Staff(String fullName, char gender, String dateOfBirth, String phoneNumber, Integer staffNumber) {
     super(fullName, gender, dateOfBirth, phoneNumber);
     this.staffNumber = staffNumber;
-
   }
 
-  // Get Staff number
+  // Get and Set Staff number
   public Integer getStaffNumber() {
     return staffNumber;
   }
-
-  // Set Staff number
   public void setStaffNumber(Integer staffnumber) {
     staffNumber = staffnumber;
   }
-
 }
