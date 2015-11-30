@@ -105,5 +105,40 @@ public class ClubManagerTest {
     assertTrue(club.getQueueSize() == 6);
   }
 
+  @Test
+  //Tests if a book queue can be added to the list
+  public void testGiveOutBook() throws Exception {
+    ClubManager club = new ClubManager();
+    Book book = new Book("ThisBook", "Ikeme", 12, "ISBN-4543-455-533-43");
 
+    Staff staff1 = new Staff("Tochi", 'F', "51 09", "0800108333", 06);
+    Staff staff3 = new Staff("Bosun", 'M', "21 09", "0800108333", 56);
+    Staff staff2 = new Staff("Tope", 'F', "51 09", "0800108333", 06);
+    Student student1 = new Student("Alapa", 'F', "51 09", "0800108333", "06", "JSS3");
+    Student student2 = new Student("Chidi", 'F', "51 09", "0800108333", "06", "JSS3");
+    Student student3 = new Student("Bayero", 'F', "51 09", "0800108333", "06", "JSS3");
+
+    Thread.sleep(100);
+    staff1.setDateOfReg();
+    Thread.sleep(100);
+    staff3.setDateOfReg();
+
+    staff1.borrowBook(book);
+    student1.borrowBook(book);
+    staff2.borrowBook(book);
+    student2.borrowBook(book);
+    student3.borrowBook(book);
+    staff3.borrowBook(book);
+
+    club.addMemberToQueue(staff1);
+    club.addMemberToQueue(staff2);
+    club.addMemberToQueue(staff3);
+    club.addMemberToQueue(student1);
+    club.addMemberToQueue(student2);
+    club.addMemberToQueue(student3);
+
+    assertTrue(club.giveOutBook() == "Tope");
+    assertSame(book.getNumberOfBookCopies(), 11);
+    assertTrue(club.getQueueSize() == 5);
+  }
 }

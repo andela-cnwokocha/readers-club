@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1733a5fc-2669-493f-9998-10d2b985ee7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/BookQueue.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/BookQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/BookQueueTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/BookQueueTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsuite/checkpoint/andela/member/StaffTest.java" afterPath="$PROJECT_DIR$/testsuite/checkpoint/andela/member/StaffTest.java" />
     </list>
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="ClubManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85820895">
-              <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.6442786">
+              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#520#531#0" expanded="true" />
@@ -69,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+              <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,12 +142,12 @@
         <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/MemberClassComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/MemberComparator.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/member/Staff.java" />
-        <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/BookQueue.java" />
         <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/BookQueueTest.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
         <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/member/StaffTest.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java" />
+        <option value="$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java" />
       </list>
     </option>
   </component>
@@ -412,7 +408,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StaffTest.testReturnBook">
+  <component name="RunManager" selected="JUnit.ClubManagerTest.testGiveOutBook">
     <configuration default="false" name="ClubManagerTest.testAddMemberToQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -465,32 +461,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ClubManagerTest.testGetBookQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="checkpoint.andela.clubmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="readers-club" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="checkpoint.andela.clubmanager" />
-      <option name="MAIN_CLASS_NAME" value="checkpoint.andela.clubmanager.ClubManagerTest" />
-      <option name="METHOD_NAME" value="testGetBookQueue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ClubManagerTest.testAddingMembersToQueues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -530,6 +500,32 @@
       <option name="PACKAGE_NAME" value="checkpoint.andela.member" />
       <option name="MAIN_CLASS_NAME" value="checkpoint.andela.member.StaffTest" />
       <option name="METHOD_NAME" value="testReturnBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClubManagerTest.testGiveOutBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="checkpoint.andela.clubmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="readers-club" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="checkpoint.andela.clubmanager" />
+      <option name="MAIN_CLASS_NAME" value="checkpoint.andela.clubmanager.ClubManagerTest" />
+      <option name="METHOD_NAME" value="testGiveOutBook" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -790,17 +786,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddMemberToQueue" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BookQueueTest.testGetFirstQueueMember" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGetBookQueue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddingMembersToQueues" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddingMembersToQueues" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGiveOutBook" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookQueueTest.testGetFirstQueueMember" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddingMembersToQueues" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddMemberToQueue" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGetBookQueue" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testGiveOutBook" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BookQueueTest.testGetFirstQueueMember" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddingMembersToQueues" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testAddMemberToQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -827,15 +823,6 @@
     <history-entry file="ClubManagerTest_testAddMemberToQueue - 2015.11.30 at 09h 05m 21s.xml">
       <configuration name="ClubManagerTest.testAddMemberToQueue" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClubManagerTest_testAddingMembersToQueues - 2015.11.30 at 03h 34m 29s.xml">
-      <configuration name="ClubManagerTest.testAddingMembersToQueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testAddingMembersToQueues - 2015.11.30 at 03h 35m 09s.xml">
-      <configuration name="ClubManagerTest.testAddingMembersToQueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testAddingMembersToQueues - 2015.11.30 at 03h 36m 06s.xml">
-      <configuration name="ClubManagerTest.testAddingMembersToQueues" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ClubManagerTest_testAddingMembersToQueues - 2015.11.30 at 03h 36m 45s.xml">
       <configuration name="ClubManagerTest.testAddingMembersToQueues" configurationId="JUnit" />
     </history-entry>
@@ -844,6 +831,15 @@
     </history-entry>
     <history-entry file="ClubManagerTest_testAddingMembersToQueues - 2015.11.30 at 09h 28m 40s.xml">
       <configuration name="ClubManagerTest.testAddingMembersToQueues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testGiveOutBook - 2015.11.30 at 10h 13m 28s.xml">
+      <configuration name="ClubManagerTest.testGiveOutBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testGiveOutBook - 2015.11.30 at 10h 14m 23s.xml">
+      <configuration name="ClubManagerTest.testGiveOutBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testGiveOutBook - 2015.11.30 at 10h 15m 53s.xml">
+      <configuration name="ClubManagerTest.testGiveOutBook" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StaffTest_testReturnBook - 2015.11.30 at 09h 56m 04s.xml">
       <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
@@ -1188,6 +1184,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/member/StaffTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/BookQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1214,20 +1220,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/member/StaffTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testsuite/checkpoint/andela/clubmanager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1236,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/clubmanager/ClubManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85820895">
-          <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.6442786">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#520#531#0" expanded="true" />
