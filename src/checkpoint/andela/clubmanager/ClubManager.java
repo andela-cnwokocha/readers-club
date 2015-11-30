@@ -75,13 +75,15 @@ public class ClubManager {
   }
 
   // Give book to member
-  public void giveOutBook() {
+  public String giveOutBook() {
+    Member member = null;
     if(borrowedBooks.size() == 1){
       BookQueue bookQueue = borrowedBooks.get(0);
-      Member member = bookQueue.takeOutMember();
+      member = bookQueue.takeOutMember();
       Book bookBorrowed = member.getBookBorrowed();
       bookBorrowed.decrementBookCopies();
     }
+    return member.getName();
   }
 
 
