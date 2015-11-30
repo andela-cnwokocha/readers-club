@@ -89,7 +89,6 @@ public class BookQueueTest {
     assertTrue(aBooksQueue.getFirstQueueMember() == "Iyabo");
   }
 
-
   // The following tests, tests if a queue is properly sorted
   @Test
   /*The first entry into the queue is a new staff before an old staff*/

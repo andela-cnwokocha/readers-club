@@ -33,16 +33,20 @@ public class ClubManagerTest {
     ClubManager club = new ClubManager();
     Staff staff1 = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
     Student student = new Student("Yosin", 'F', "51 09", "0800108333", "06", "JSS3");
+
     club.addMemberToList(staff1);
     club.addMemberToList(student);
+
     assertEquals(club.getNumberOfMembers(), 2);
   }
 
   @Test
   public void testAddBookToList() throws Exception {
     ClubManager club = new ClubManager();
+
     Book book1 = new Book("ThisBook1", "Ikeme", 12, "ISBN-4543-455-533-43");
     Book book2 = new Book("ThisBook2", "Ikeme", 12, "ISBN-4543-455-533-43");
+
     club.addBookToList(book1);
     club.addBookToList(book2);
 
@@ -52,11 +56,13 @@ public class ClubManagerTest {
   @Test
   public void testAddMemberToList() throws Exception {
     ClubManager club = new ClubManager();
+
     Staff staff1 = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
     Staff staff2 = new Staff("Yosin", 'F', "51 09", "0800108333", 06);
 
     club.addMemberToList(staff1);
     club.addMemberToList(staff2);
+
     assertEquals(club.getNumberOfMembers(), 2);
   }
 
@@ -64,14 +70,15 @@ public class ClubManagerTest {
   //Tests if a book queue can be added to the list
   public void testAddMemberToQueue() throws Exception {
     ClubManager club = new ClubManager();
+
     Book book = new Book("ThisBook", "Ikeme", 12, "ISBN-4543-455-533-43");
 
     Staff staff = new Staff("Tochi", 'F', "51 09", "0800108333", 06);
     staff.borrowBook(book);
+
     club.addMemberToQueue(staff);
 
-    assertFalse(club.getBorrowedBooksList().isEmpty());
-    assertTrue(club.getSizeOfBookList() == 1);
+    assertTrue(club.getSizeOfBorrowedBooks() == 1);
   }
 
   @Test
@@ -101,7 +108,7 @@ public class ClubManagerTest {
     club.addMemberToQueue(student2);
     club.addMemberToQueue(student3);
 
-    assertTrue(club.getSizeOfBookList() == 1);
+    assertTrue(club.getSizeOfBorrowedBooks() == 1);
     assertTrue(club.getQueueSize() == 6);
   }
 
