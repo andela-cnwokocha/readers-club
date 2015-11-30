@@ -5,6 +5,7 @@ import checkpoint.andela.member.Student;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 
@@ -14,7 +15,8 @@ import java.util.PriorityQueue;
 public class ClubManager {
   private ArrayList<Book> books;
   private ArrayList <Member> members;
-  private ArrayList<PriorityQueue<Member>> borrowedBooks;
+  //private ArrayList<PriorityQueue<Member>> borrowedBooks = null;
+  List<BookQueue> borrowedBooks = new ArrayList<BookQueue>();
 
   public ClubManager() {
     books = new ArrayList<Book>();
@@ -41,29 +43,46 @@ public class ClubManager {
     members.add(member);
   }
 
+  // Get borrrowedbooks list
+  public List <BookQueue> getBorrowedBooksList() {
+    return borrowedBooks;
+  }
+
   // Get the size of the queue
-  public int getSizeOfQueue() {
+  public int getSizeOfBookList() {
     return borrowedBooks.size();
   }
 
   // Let member borrow book
   public void addMemberToQueue(Member member) {
-    boolean chkBorrowedBook = member.isBookBorrowed();
-    if(chkBorrowedBook){
-      String bookName = member.getBorrowedBook();
-      BookQueue aBooksQueue = new BookQueue();
+    BookQueue aBooksQueue = new BookQueue();
+    if(borrowedBooks.size() >= 1){
+      borrowedBooks.get(0).addToQueue(member);
+    }else {
       aBooksQueue.addToQueue(member);
-      borrowedBooks.add(aBooksQueue.getBookQue());
+      borrowedBooks.add(aBooksQueue);
     }
   }
 
-  // Get the first member of a book's queue
-  public String firstQueueMember(String nameOfBook) {
-    return "";
+  // this returns the size of the bookqueue in the borrowedbooklist
+  public int getQueueSize(){
+    int size = 0;
+    if(!borrowedBooks.isEmpty()){
+      BookQueue aBooksQueue = borrowedBooks.get(0);
+      size = aBooksQueue.getQueueSize();
+    }
+    return size;
   }
 
-  // Get a specified item on the array of borrowed books
-  //public PriorityQueue<Member> getBookQueue
+  // Give book to member
+  public void giveOutBook() {
+    if(borrowedBooks.size() == 1){
+      BookQueue bookQueue = borrowedBooks.get(0);
+      Member member = bookQueue.takeOutMember();
+      Book bookBorrowed = member.getBookBorrowed();
+      bookBorrowed.decrementBookCopies();
+    }
+  }
 
 
 }

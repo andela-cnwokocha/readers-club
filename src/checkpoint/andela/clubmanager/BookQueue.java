@@ -15,7 +15,7 @@ public class BookQueue {
   }
 
   public PriorityQueue<Member> getBookQue() {
-    return this.bookQue;
+    return bookQue;
   }
 
   public int getQueueSize (){
@@ -31,5 +31,9 @@ public class BookQueue {
   public String getFirstQueueMember (){
     Member member = this.bookQue.peek();
     return member.getName();
+  }
+
+  public Member takeOutMember(){
+    return bookQue.remove();
   }
 }

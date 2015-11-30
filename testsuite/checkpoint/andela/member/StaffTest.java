@@ -43,6 +43,7 @@ public class StaffTest {
     staff.returnsBook(book);
     assertTrue(staff.getBorrowedBook() =="That guy sef!");
     assertFalse(staff.isBookBorrowed());
+    assertSame(book.getNumberOfBookCopies(), 13);
 
   }
 

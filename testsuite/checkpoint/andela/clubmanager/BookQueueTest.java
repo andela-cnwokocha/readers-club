@@ -55,6 +55,24 @@ public class BookQueueTest {
   }
 
   @Test
+  public void testTakeOutMember() throws Exception {
+    Book book = new Book("That guy sef!", "Chidiebere Justice", 12, "ISBN-5760-6866-8797");
+    BookQueue aBooksQueue = new BookQueue();
+
+    Staff staff = new Staff("Iyabo", 'M', "21 09", "0800108333", 56);
+    Student student = new Student("Chidiebere Justice Nwokocha", 'F', "24th January 1994", "08162082773", "67", "JSS1");
+
+    staff.borrowBook(book);
+    student.borrowBook(book);
+
+    aBooksQueue.addToQueue(student);
+    aBooksQueue.addToQueue(staff);
+
+    Member member = aBooksQueue.takeOutMember();
+    assertTrue(member.getName() == "Iyabo");
+  }
+
+  @Test
   public void testGetFirstQueueMember() throws Exception {
     Book book = new Book("That guy sef!", "Chidiebere Justice", 12, "ISBN-5760-6866-8797");
     BookQueue aBooksQueue = new BookQueue();
