@@ -5,6 +5,7 @@ import checkpoint.andela.member.Student;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 
@@ -14,7 +15,8 @@ import java.util.PriorityQueue;
 public class ClubManager {
   private ArrayList<Book> books;
   private ArrayList <Member> members;
-  //private ArrayList<>;
+  //private ArrayList<PriorityQueue<Member>> borrowedBooks = null;
+  List<BookQueue> borrowedBooks = new ArrayList<BookQueue>();
 
   public ClubManager() {
     books = new ArrayList<Book>();
@@ -41,9 +43,47 @@ public class ClubManager {
     members.add(member);
   }
 
+  // Get borrrowedbooks list
+  public List <BookQueue> getBorrowedBooksList() {
+    return borrowedBooks;
+  }
+
   // Get the size of the queue
-  public int getSizeOfQueue() {
-    return 0;
+  public int getSizeOfBookList() {
+    return borrowedBooks.size();
+  }
+
+  // Let member borrow book
+  public void addMemberToQueue(Member member) {
+    BookQueue aBooksQueue = new BookQueue();
+    if(borrowedBooks.size() >= 1){
+      borrowedBooks.get(0).addToQueue(member);
+    }else {
+      aBooksQueue.addToQueue(member);
+      borrowedBooks.add(aBooksQueue);
+    }
+  }
+
+  // this returns the size of the bookqueue in the borrowedbooklist
+  public int getQueueSize(){
+    int size = 0;
+    if(!borrowedBooks.isEmpty()){
+      BookQueue aBooksQueue = borrowedBooks.get(0);
+      size = aBooksQueue.getQueueSize();
+    }
+    return size;
+  }
+
+  // Give book to member
+  public String giveOutBook() {
+    Member member = null;
+    if(borrowedBooks.size() == 1){
+      BookQueue bookQueue = borrowedBooks.get(0);
+      member = bookQueue.takeOutMember();
+      Book bookBorrowed = member.getBookBorrowed();
+      bookBorrowed.decrementBookCopies();
+    }
+    return member.getName();
   }
 
 

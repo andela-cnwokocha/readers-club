@@ -11,6 +11,9 @@ abstract public class Member {
   private String dateOfBirth;
   private String phoneNumber;
   private Date dateOfReg;
+  private boolean memberRequestedBook = false;
+  private String borrowedBook;
+  private Book bookBorrowed;
 
 
   public Member(String fullName, char gender, String dateOfBirth, String phoneNumber) {
@@ -69,14 +72,29 @@ abstract public class Member {
     return currentDate;
   }
 
-  // member borrows a book
-  public String borrowBook(Book book) {
-    return book.getBookName();
+  public void borrowBook(Book book) {
+    memberRequestedBook = true;
+    borrowedBook = book.getBookName();
+    bookBorrowed = book;
   }
 
-  // member returns book
-  public String returnsBook(Book book) {
-    return book.getBookName();
+  public void returnsBook(Book book) {
+    memberRequestedBook = false;
+    borrowedBook = book.getBookName();
+    book.incrementBookCopies();
+  }
+
+  //Get borrowed book's name
+  public String getBorrowedBook(){
+    return borrowedBook;
+  }
+
+  public boolean isBookBorrowed() {
+    return memberRequestedBook;
+  }
+
+  public Book getBookBorrowed() {
+    return this.bookBorrowed;
   }
 
 }

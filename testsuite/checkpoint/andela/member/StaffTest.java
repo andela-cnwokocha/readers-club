@@ -23,13 +23,28 @@ public class StaffTest {
   public void testBorrowBook() throws Exception {
     Staff staff = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
     Book book = new Book("That guy sef!", "Chidiebere Justice", 12, "ISBN-5760-6866-8797");
-    assertEquals(staff.borrowBook(book),"That guy sef!");
+    staff.borrowBook(book);
+    assertTrue(staff.getBorrowedBook() =="That guy sef!");
+    assertTrue(staff.isBookBorrowed());
+  }
+
+  @Test
+  public void testGetBorrowedBook() throws Exception {
+    Staff staff = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
+    Book book = new Book("That guy sef!", "Chidiebere Justice", 12, "ISBN-5760-6866-8797");
+    staff.borrowBook(book);
+    assertTrue(staff.getBorrowedBook() == "That guy sef!");
   }
 
   @Test
   public void testReturnBook() throws Exception {
     Staff staff = new Staff("Tosin", 'M', "21 09", "0800108333", 56);
     Book book = new Book("That guy sef!", "Chidiebere Justice", 12, "ISBN-5760-6866-8797");
-    assertEquals(staff.borrowBook(book),"That guy sef!");
+    staff.returnsBook(book);
+    assertTrue(staff.getBorrowedBook() =="That guy sef!");
+    assertFalse(staff.isBookBorrowed());
+    assertSame(book.getNumberOfBookCopies(), 13);
+
   }
+
 }
