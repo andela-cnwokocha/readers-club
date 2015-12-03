@@ -23,7 +23,7 @@ public class ClubManager {
   }
 
   // Get the number of books in the library
-  public int getLibrarySize() {
+  public int getNumberOfBooks() {
     return books.size();
   }
 
@@ -33,23 +33,24 @@ public class ClubManager {
   }
 
   // Add a book to the book list
-  public void addBookToList(Book book) {
+  public void addBook(Book book) {
     this.books.add(book);
   }
 
   // Add a member to the member list
-  public void addMemberToList(Member member) {
+  public void addMember(Member member) {
     members.add(member);
   }
 
   // Get the size of the queue
-  public int getSizeOfBorrowedBooks() {
+  public int getNumberOfBorrowedBooks() {
     return borrowedBooks.size();
   }
 
   // Let member borrow book
-  public void addMemberToQueue(Member member) {
+  public void addMemberToQueue(Member member, Book book) {
     BookQueue aBooksQueue = new BookQueue();
+    books.add(book);
     if(borrowedBooks.size() >= 1){
       borrowedBooks.get(0).addToQueue(member);
     }else {
