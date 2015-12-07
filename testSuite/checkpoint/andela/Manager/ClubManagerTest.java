@@ -223,9 +223,9 @@ public class ClubManagerTest {
     assertTrue(rhodesClub.getNumberOfBorrowedBooks() == 1);
     assertTrue(rhodesClub.getBookRequestSize(book)== 4);
     assertTrue(rhodesClub.lendBookToMember(student1, book));
-    /*assertTrue(rhodesClub.lendBookToMember(staff2, book));
+    assertTrue(rhodesClub.lendBookToMember(staff2, book));
     assertTrue(rhodesClub.lendBookToMember(staff1, book));
     assertFalse(rhodesClub.lendBookToMember(student2, book));
-    assertTrue(book.getNumberOfBookCopies() == 0);*/
+    assertTrue(book.getNumberOfBookCopies() == 0);
   }
 }
