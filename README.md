@@ -1,7 +1,5 @@
 <img src="https://dl.dropboxusercontent.com/s/cpq8wvg976bqmnf/icon.png?dl=0?raw=1" alt="book clubreadme" align="right" />
-#Readers Book club
 
-### Introduction :books:
 .markdown-here-wrapper {
   font-family: verdana, sans;
   font-size: 50px;
@@ -10,6 +8,10 @@
 body {
   font-family:verdana, sans;
 }
+#Readers Book club
+
+### Introduction :books:
+
 In a given readers club, books are distributed to members (Students or Staffs) based on the rank of the requester or the date of registration of the requester. The following conditions applies before a member gets a book;  
 
 > ###### If a Staff and a Student both request for the same book at the same time, the Staff gets the book.  
