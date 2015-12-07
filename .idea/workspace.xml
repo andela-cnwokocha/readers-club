@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a239b16-3423-432d-8798-be54a24ac4b3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/Manager/ClubManager.class" afterPath="$PROJECT_DIR$/out/production/readers-club/checkpoint/andela/Manager/ClubManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/Manager/ClubManagerTest.class" afterPath="$PROJECT_DIR$/out/test/readers-club/checkpoint/andela/Manager/ClubManagerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" afterPath="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testSuite/checkpoint/andela/members/StaffTest.java" afterPath="$PROJECT_DIR$/testSuite/checkpoint/andela/members/StaffTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java" afterPath="$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java" />
     </list>
     <ignored path="readers-club.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,22 +28,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClubManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClubManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
+            <state vertical-scroll-proportion="1.2540107">
+              <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ClubManager#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#addBook#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#addMember#0;class#ClubManager#0" expanded="false" />
-                <element signature="method#addMemberToBookRequest#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#getBookRequestSize#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#isClubMember#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#isClubBook#0;class#ClubManager#0" expanded="false" />
-                <element signature="method#qualifiedMembers#0;class#ClubManager#0" expanded="false" />
+                <element signature="method#isRequestMade#0;class#ClubManager#0" expanded="false" />
                 <element signature="method#addReturnedBook#0;class#ClubManager#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/BookQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#BookQueue#0;class#BookQueue#0" expanded="false" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="method#isQueueItem#0;class#BookQueue#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+              <caret line="223" column="56" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Member.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2551724">
+            <state vertical-scroll-proportion="0.0">
               <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/testSuite/checkpoint/andela/members/StaffTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,16 +139,17 @@
         <option value="$PROJECT_DIR$/testSuite/checkpoint/andela/main/BookTest.java" />
         <option value="$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/BookQueueTest.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/Manager/BookQueue.java" />
-        <option value="$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/members/Staff.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/members/Student.java" />
         <option value="$PROJECT_DIR$/testSuite/checkpoint/andela/members/StaffTest.java" />
-        <option value="$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java" />
         <option value="$PROJECT_DIR$/src/checkpoint/andela/main/Member.java" />
+        <option value="$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
     <option name="y" value="40" />
     <option name="width" value="1302" />
     <option name="height" value="728" />
@@ -383,32 +401,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="BookQueueTest.testIfMemberIsQueueItemShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="checkpoint.andela.Manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="readers-club" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="checkpoint.andela.Manager" />
-      <option name="MAIN_CLASS_NAME" value="checkpoint.andela.Manager.BookQueueTest" />
-      <option name="METHOD_NAME" value="testIfMemberIsQueueItemShould" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ClubManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -474,6 +466,32 @@
       <option name="PACKAGE_NAME" value="checkpoint.andela.members" />
       <option name="MAIN_CLASS_NAME" value="checkpoint.andela.members.StaffTest" />
       <option name="METHOD_NAME" value="testReturnBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ClubManagerTest.testQualifiedMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="checkpoint.andela.Manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="readers-club" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="checkpoint.andela.Manager" />
+      <option name="MAIN_CLASS_NAME" value="checkpoint.andela.Manager.ClubManagerTest" />
+      <option name="METHOD_NAME" value="testQualifiedMembers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -733,18 +751,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testLendBookToMember" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BookQueueTest.testIfMemberIsQueueItemShould" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.StaffTest.testForMakingBookRequest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StaffTest.testForMakingBookRequest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testQualifiedMembers" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testLendBookToMember" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StaffTest.testForMakingBookRequest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookQueueTest.testIfMemberIsQueueItemShould" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ClubManagerTest.testQualifiedMembers" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ClubManagerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StaffTest.testReturnBook" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StaffTest.testForMakingBookRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -762,40 +780,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClubManagerTest - 2015.12.07 at 08h 21m 34s.xml">
-      <configuration name="ClubManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 08h 21m 46s.xml">
-      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 08h 22m 31s.xml">
       <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 08h 22m 34s.xml">
       <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 07m 43s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 09h 26m 17s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 13m 11s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 09h 26m 43s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 13m 37s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 09h 27m 25s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 16m 46s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 09h 28m 32s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 17m 21s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 10h 21m 20s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffTest_testReturnBook - 2015.12.07 at 08h 18m 15s.xml">
-      <configuration name="StaffTest.testReturnBook" configurationId="JUnit" />
+    <history-entry file="ClubManagerTest_testLendBookToMember - 2015.12.07 at 10h 21m 36s.xml">
+      <configuration name="ClubManagerTest.testLendBookToMember" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testQualifiedMembers - 2015.12.07 at 09h 40m 36s.xml">
+      <configuration name="ClubManagerTest.testQualifiedMembers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClubManagerTest_testQualifiedMembers - 2015.12.07 at 09h 40m 59s.xml">
+      <configuration name="ClubManagerTest.testQualifiedMembers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="40" width="1302" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="10" y="40" width="1302" height="728" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -803,8 +821,8 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22757475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22757475" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -858,7 +876,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="24" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1086,14 +1104,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/BookQueue.java">
+    <entry file="file://$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <caret line="223" column="56" selection-start-line="223" selection-start-column="56" selection-end-line="223" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#BookQueue#0;class#BookQueue#0" expanded="false" />
-            <element signature="method#isQueueItem#0;class#BookQueue#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1101,36 +1117,7 @@
     <entry file="file://$PROJECT_DIR$/testSuite/checkpoint/andela/members/StaffTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="10" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ClubManager#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#addBook#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#addMember#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#addMemberToBookRequest#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#getBookRequestSize#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#isClubMember#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#isClubBook#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#qualifiedMembers#0;class#ClubManager#0" expanded="false" />
-            <element signature="method#addReturnedBook#0;class#ClubManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testSuite/checkpoint/andela/Manager/ClubManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1139,7 +1126,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/main/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2551724">
+        <state vertical-scroll-proportion="0.0">
           <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1150,6 +1137,38 @@
             <element signature="e#1918#1919#0" expanded="true" />
             <element signature="e#2133#2134#0" expanded="true" />
             <element signature="e#2183#2184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/BookQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BookQueue#0;class#BookQueue#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="method#isQueueItem#0;class#BookQueue#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/checkpoint/andela/Manager/ClubManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2540107">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ClubManager#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#addBook#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#addMember#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#getBookRequestSize#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#isClubMember#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#isClubBook#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#isRequestMade#0;class#ClubManager#0" expanded="false" />
+            <element signature="method#addReturnedBook#0;class#ClubManager#0" expanded="false" />
           </folding>
         </state>
       </provider>

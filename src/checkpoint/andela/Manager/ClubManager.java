@@ -56,15 +56,16 @@ public class ClubManager {
   }
 
   public void addMemberToBookRequest(Book book, Member member){
+    int availableBookSlots = book.getNumberOfBookCopies();
     if(isClubMember(member) && isClubBook(book)){
-        String isbnNumber = book.getIsbnNumber();
-        if(borrowedBooks.containsKey(isbnNumber)) {
-          borrowedBooks.get(isbnNumber).addToQueue(member);
-        }else {
-          BookQueue bookQueue = new BookQueue();
-          bookQueue.addToQueue(member);
-          borrowedBooks.put(isbnNumber, bookQueue);
-        }
+      String isbnNumber = book.getIsbnNumber();
+      if(borrowedBooks.containsKey(isbnNumber)) {
+        borrowedBooks.get(isbnNumber).addToQueue(member);
+      }else {
+        BookQueue bookQueue = new BookQueue();
+        bookQueue.addToQueue(member);
+        borrowedBooks.put(isbnNumber, bookQueue);
+      }
     }
   }
 
@@ -99,15 +100,7 @@ public class ClubManager {
   public boolean lendBookToMember(Member member, Book book){
     boolean isLendingSuccessful = false;
     if(isBookBorrowed(book) && isRequestMade(member, book)){
-      Member[] qualified = qualifiedMembers(book);
-      for(Member qualifiedMember: qualified){
-        if(qualifiedMember.getIdentityNumber() == member.getIdentityNumber()){
-          member.addBorrowedBook(book.getBookName());
-          decrementBookCopies(book);
-          isLendingSuccessful = true;
-          break;
-        }
-      }
+      Member whoGets = borrowedBooks.get(book).getMember();
     }
     return isLendingSuccessful;
   }
@@ -120,21 +113,10 @@ public class ClubManager {
     for(Member bookrequest : bookRequests.getBookQue()){
       if(bookrequest.getIdentityNumber() == member.getIdentityNumber()){
         requester = true;
-        //break;
+        break;
       }
     }
     return requester;
-  }
-  private Member[] qualifiedMembers(Book book){
-    Member[] qualifiedmembers = null;
-    if(isBookAvailable(book)){
-      int availableBooks = book.getNumberOfBookCopies();
-      qualifiedmembers = new Member[availableBooks];
-      for(int requestIndex = 0; requestIndex < availableBooks; requestIndex++){
-        qualifiedmembers[requestIndex] = getBookRequest(book).getMember();
-      }
-    }
-    return qualifiedmembers;
   }
   private boolean isBookBorrowed(Book book){
     return borrowedBooks.containsKey(book.getIsbnNumber());
