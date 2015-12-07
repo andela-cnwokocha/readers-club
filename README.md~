@@ -7,6 +7,9 @@
   font-size: 50px;
 }
 
+body {
+  font-family:verdana, sans;
+}
 In a given readers club, books are distributed to members (Students or Staffs) based on the rank of the requester or the date of registration of the requester. The following conditions applies before a member gets a book;  
 
 > ###### If a Staff and a Student both request for the same book at the same time, the Staff gets the book.  
@@ -16,7 +19,7 @@ In a given readers club, books are distributed to members (Students or Staffs) b
 This project implements classes that defines properties, and behaviors of the club and its members.  
 
 ## Classes and their Methods 
-> #### ClubManager class  
+#### ClubManager class  
 
 #### About: 
 This is the main class, it manages all possible interaction between books and a club members. This class knows all members and books in the club as it maintains a list of these. It also maintains a list which contains book-queues. A book-queue holds members who requested for a given book.  
