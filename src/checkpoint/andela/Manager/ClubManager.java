@@ -11,10 +11,6 @@ import java.util.*;
 public class ClubManager {
   ArrayList<Book> clubBooks;
   ArrayList<Member> clubMembers;
-  /* Why I did not use PriorityQueue<Book> as the value for the hashmap is that, if a book already exists
-  and I now want to append to it, it wouldn't make the queue sorted, so I need the class itself so I can use
-  its method to add to its queue
-  * */
   HashMap<String, BookQueue> borrowedBooks;
 
   public ClubManager () {
