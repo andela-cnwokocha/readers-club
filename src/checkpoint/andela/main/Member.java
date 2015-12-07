@@ -2,6 +2,7 @@ package checkpoint.andela.main;
 
 import java.util.ArrayList;
 import java.util.Date;
+import checkpoint.andela.Manager.*;
 
 /**
  * Created by chidi on 12/3/15.
@@ -63,4 +64,8 @@ abstract public class Member {
     booksBorrowed.add(bookName);
   }
   public abstract int getIdentityNumber();
+
+  public void makeBookRequest(Book book, ClubManager club){
+    club.addMemberToBookRequest(book, this);
+  }
 }

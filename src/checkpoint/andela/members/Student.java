@@ -15,9 +15,6 @@ public class Student extends Member{
     this.schoolClass = classroom;
   }
 
-  public void setStudentID(int studentId) {
-    this.studentID = studentId;
-  }
   public String getStudentClass() {
     return schoolClass;
   }
@@ -25,6 +22,6 @@ public class Student extends Member{
     this.schoolClass = studentClass;
   }
   public int getIdentityNumber() {
-    return studentID;
+    return this.studentID;
   }
 }
