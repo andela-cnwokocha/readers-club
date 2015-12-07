@@ -13,7 +13,7 @@ abstract public class Member {
   private String dateOfBirth;
   private String phoneNumber;
   private Date dateOfReg;
-  private ArrayList<String> booksBorrowed;
+  private ArrayList<String> booksBorrowed = null;
 
 
   public Member(String fullName, char gender, String dateOfBirth, String phoneNumber) {
@@ -64,8 +64,21 @@ abstract public class Member {
     booksBorrowed.add(bookName);
   }
   public abstract int getIdentityNumber();
+  public int getNumberOfBorrowedBooks(){
+    return this.booksBorrowed.size();
+  }
 
   public void makeBookRequest(Book book, ClubManager club){
     club.addMemberToBookRequest(book, this);
+  }
+  public void returnBook(Book book, ClubManager club){
+    club.addReturnedBook(this, book);
+  }
+  public void removeBorrowedBook(String bookName) {
+    int bookIndex = booksBorrowed.indexOf(bookName);
+    booksBorrowed.remove(bookIndex);
+  }
+  public boolean collectRequestedBook(Book book, ClubManager club) {
+    return club.lendBookToMember(this, book);
   }
 }

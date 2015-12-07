@@ -26,4 +26,23 @@ public class StaffTest {
     assertSame(club.getNumberOfBorrowedBooks(), 2);
   }
 
+  @Test
+  public void testReturnBook() throws Exception {
+    ClubManager club = new ClubManager();
+    Staff staff = new Staff("Tochi", 'F', "51 09", "0800108333", 80);
+    Book book1 = new Book("ThisBook one", "Ikeme", 12, "ISBN-4556-455-533-43");
+    Book book2 = new Book("ThisBook one", "Ikeme", 12, "ISBN-4455-533-43");
+
+    club.addMember(staff);
+    club.addBook(book1);
+    club.addBook(book2);
+
+    staff.makeBookRequest(book1, club);
+    staff.makeBookRequest(book2, club);
+
+    assertTrue(club.getNumberOfBorrowedBooks() == 2);
+
+    assertTrue(staff.collectRequestedBook(book1, club));
+  }
+
 }

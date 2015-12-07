@@ -120,12 +120,11 @@ public class ClubManager {
     for(Member bookrequest : bookRequests.getBookQue()){
       if(bookrequest.getIdentityNumber() == member.getIdentityNumber()){
         requester = true;
-        break;
+        //break;
       }
     }
     return requester;
   }
-
   private Member[] qualifiedMembers(Book book){
     Member[] qualifiedmembers = null;
     if(isBookAvailable(book)){
@@ -145,6 +144,12 @@ public class ClubManager {
   }
   private void decrementBookCopies(Book book){
     book.decrementBookCopies();
+  }
+  private void incrementBookCopies(Book book) {book.incrementBookCopies();}
+
+  public void addReturnedBook(Member member, Book book) {
+    member.removeBorrowedBook(book.getBookName());
+    incrementBookCopies(book);
   }
 
 }
