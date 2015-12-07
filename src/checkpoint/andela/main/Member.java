@@ -13,7 +13,7 @@ abstract public class Member {
   private String dateOfBirth;
   private String phoneNumber;
   private Date dateOfReg;
-  private ArrayList<String> booksBorrowed = null;
+  private ArrayList<String> booksBorrowed;
 
 
   public Member(String fullName, char gender, String dateOfBirth, String phoneNumber) {
