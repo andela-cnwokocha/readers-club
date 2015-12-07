@@ -23,7 +23,7 @@ public class StaffTest {
     staff.makeBookRequest(book1, club);
     staff.makeBookRequest(book2, club);
 
-    assertTrue(club.getNumberOfBorrowedBooks() == 2);
+    assertSame(club.getNumberOfBorrowedBooks(), 2);
   }
 
 }
