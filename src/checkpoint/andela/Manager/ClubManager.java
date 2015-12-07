@@ -56,7 +56,6 @@ public class ClubManager {
   }
 
   public void addMemberToBookRequest(Book book, Member member){
-    int availableBookSlots = book.getNumberOfBookCopies();
     if(isClubMember(member) && isClubBook(book)){
       String isbnNumber = book.getIsbnNumber();
       if(borrowedBooks.containsKey(isbnNumber)) {
@@ -102,15 +101,11 @@ public class ClubManager {
     if(isBookBorrowed(book) && isRequestMade(member, book)){
       Member whoGets = borrowedBooks.get(book.getIsbnNumber()).getMember();
       if(whoGets.getIdentityNumber() == member.getIdentityNumber()){
-        //member.addBorrowedBook(book.getBookName());
         decrementBookCopies(book);
         isLendingSuccessful = true;
       }
     }
     return isLendingSuccessful;
-  }
-  private boolean isBookAvailable(Book book) {
-    return book.getNumberOfBookCopies() > 0;
   }
   private Boolean isRequestMade(Member member, Book book) {
     Boolean requester = false;
@@ -133,7 +128,6 @@ public class ClubManager {
     book.decrementBookCopies();
   }
   private void incrementBookCopies(Book book) {book.incrementBookCopies();}
-
   public void addReturnedBook(Member member, Book book) {
     member.removeBorrowedBook(book.getBookName());
     incrementBookCopies(book);

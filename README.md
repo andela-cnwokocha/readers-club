@@ -2,7 +2,7 @@
 <style>
 .markdown-here-wrapper {
   font-family: verdana, sans;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 body {
@@ -27,13 +27,13 @@ This project implements classes that defines properties, and behaviors of the cl
 #### About: 
 This is the main class, it manages all possible interaction between books and a club members. This class knows all members and books in the club as it maintains a list of these. It also maintains a list which contains book-queues. A book-queue holds members who requested for a given book.  
 ###### Methods:
-`getLibrarySize()` - Returns the number of books in the library.  
+`getNumberOfBooks()` - Returns the number of books in the library.  
 `getNumberOfMembers()` - Returns the number of members in the club.  
-`addMemberToList(Member member)` - Adds the member to the list of members in the club. Its argument is an object of type Member or its subclasses.  
-`addBookToList(Book book)` - Adds the book to the list of available books. Its takes as argument a Book object.  
-`getSizeOfBorrowedBooks()` - Returns the number of book queues in the list of borrowed books. This will be the number of borrowed books.  
-`getQueueSize()` - Returns the size of a book-queue. This will be the number of members that requested for a book.  
-`addMemberToQueue(Member member)` - This adds a member to a book-queue. Before a member can be added to a book-queue, the member must have borrowed the book. This is like a registered user clicking on a *borrow book* button on a web page/app, the underlying functions (club manager here) then adds the user to a queue for the book.  
+`addMember(Member member)` - Adds the member to the list of members in the club. Its argument is an object of type Member or its subclasses.  
+`addBook(Book book)` - Adds the book to the list of available books. Its takes as argument a Book object.  
+`getNumberOfBorrowedBooks()` - Returns the number of book queues in the list of borrowed books. This will be the number of borrowed books.  
+`getBookRequestSize(Book book)` - Returns the size of a book-queue. This will be the number of members that requested for a book.  
+`addMemberToBookRequest(Member member, Book book)` - This adds a member to a book-queue. Before a member can be added to a book-queue, the member must have borrowed the book. This is like a registered user clicking on a *borrow book* button on a web page/app, the underlying functions (club manager here) then adds the user to a queue for the book. Other methods includes `addBooks, addMembers, getNumberOfBorrowedBooks, isClubMember, isClubBook, addReturnedBook` etc    
 
 ```java
 ClubManager club = new ClubManager();
@@ -54,10 +54,10 @@ club.addMemberToQueue(staff);
 This class defines behaviors and properties applicable to all club members (Students or Staffs). It is an abstract class extended by the Student and Staff classes.   
 ###### Methods:
 The properties applicable to all members are  the full name, date of birth, date of registration, phone number, and the gender. Hence, the methods defined in this class are mostly getters and setters for these properties. Other methods are   
-`borrowBook(Book book)` - allows a member borrow a book.    
-`returnBook(Book book)` - when a book is returned, the number of copies of that book is increased.   
-`isBookBorrowed()` -  checks if the member borrowed a book.  
-`getBookBorrowed()` - returns the book that was borrowed by the member.   
+`makeBookRequest(Book book, ClubManager club)` - allows a member borrow a book.    
+`returnBook(Book book, ClubManager club)` - when a book is returned, the number of copies of that book is increased.    
+`collectRequestedBook(Book book, ClubManager club)` - returns true if the clubmanager gives the member the requested book.    
+Other methods are also defined.
 
 #### Book class
 
@@ -74,9 +74,10 @@ This class defines a book's queue. It is what is stored in the borrowed books li
 
 ###### Methods:
 The following methods are defined  
-`getQueueSize ()` - returns the size of the queue. This is the number of members in the queue.  
+`getSizeOfQueue()` - returns the size of the queue. This is the number of members in the queue.  
 `addToQueue(Member member)` - adds a member to the queue.
-`takeOutMember()` - removes the first member from the queue, thereby reducing the size of the queue.  
+`isQueueItem(Member member)`
+`getMember()` - removes the first member from the queue, thereby reducing the size of the queue.  
 
 #### MemberComparator  class
 
