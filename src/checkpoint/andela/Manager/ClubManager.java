@@ -100,7 +100,12 @@ public class ClubManager {
   public boolean lendBookToMember(Member member, Book book){
     boolean isLendingSuccessful = false;
     if(isBookBorrowed(book) && isRequestMade(member, book)){
-      Member whoGets = borrowedBooks.get(book).getMember();
+      Member whoGets = borrowedBooks.get(book.getIsbnNumber()).getMember();
+      if(whoGets.getIdentityNumber() == member.getIdentityNumber()){
+        //member.addBorrowedBook(book.getBookName());
+        decrementBookCopies(book);
+        isLendingSuccessful = true;
+      }
     }
     return isLendingSuccessful;
   }
