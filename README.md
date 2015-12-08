@@ -17,6 +17,7 @@ This project implements classes that defines properties, and behaviors of the cl
  
 This is the main class, it manages all possible interaction between books and a club members. This class knows all members and books in the club as it maintains a list of these. It also maintains a list which contains book-queues. A book-queue holds members who requested for a given book.  
 ** Methods:**
+=================
 `getNumberOfBooks()` - Returns the number of books in the library.  
 `getNumberOfMembers()` - Returns the number of members in the club.  
 `addMember(Member member)` - Adds the member to the list of members in the club. Its argument is an object of type Member or its subclasses.  
@@ -42,6 +43,7 @@ club.addMemberToQueue(staff);
    
 This class defines behaviors and properties applicable to all club members (Students or Staffs). It is an abstract class extended by the Student and Staff classes.   
 ** Methods:**
+======================
 The properties applicable to all members are  the full name, date of birth, date of registration, phone number, and the gender. Hence, the methods defined in this class are mostly getters and setters for these properties. Other methods are   
 `makeBookRequest(Book book, ClubManager club)` - allows a member borrow a book.    
 `returnBook(Book book, ClubManager club)` - when a book is returned, the number of copies of that book is increased.    
@@ -53,6 +55,7 @@ Other methods are also defined.
 This class defines an available book in the club.  
 
 ** Methods: **
+===================
 Methods are getters and setters of a book's properties, as well as possible actions on these properties.The properties are, the number of available copies of the book, the author, ISBN number and book title.
 
 ##### BookQueue class
@@ -60,6 +63,7 @@ Methods are getters and setters of a book's properties, as well as possible acti
 This class defines a book's queue. It is what is stored in the borrowed books list of the *`ClubManager`* class. When a member borrows a book, that member is pushed to the appropriate book queue for that book. The book queues are sorted based on the comparator implemented by the `MemberComparator` class.
 
 **Methods:**
+==================
 The following methods are defined  
 `getSizeOfQueue()` - returns the size of the queue. This is the number of members in the queue.  
 `addToQueue(Member member)` - adds a member to the queue.
@@ -71,7 +75,8 @@ The following methods are defined
 
 This class implements a comparator interface for sorting items on a queue. Members are sorted by their rank (Staff or Student), or date of registration. 
 
-**Method:**  
+**Method:**
+====================
 Overrides the `compare` method of the `Comparator` interface.
 
 ##### Staff class
