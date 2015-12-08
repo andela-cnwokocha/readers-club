@@ -27,43 +27,57 @@ abstract public class Member {
   public String getName() {
     return fullName;
   }
+
   public void setName(String memberName) {
     this.fullName = memberName;
   }
+
   public void setDateOfReg() {
     dateOfReg = new Date();
   }
+
   public Date getDateOfReg() {
     return dateOfReg;
   }
+
   public void setGender(char gender) {
     this.gender = gender;
   }
+
   public char getGender() {
     return gender;
   }
+
   public void setDateOfBirth(String dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
+
   public String getDateOfBirth() {
     return dateOfBirth;
   }
+
   public void setPhoneNumber(String phonenumber) {
     this.phoneNumber = phonenumber;
   }
+
   public String getPhoneNumber() {
     return phoneNumber;
   }
+
   public void setBooksBorrowed(ArrayList<String> booksborrowed) {
     this.booksBorrowed = booksborrowed;
   }
+
   public ArrayList<String> getBooksBorrowed() {
     return booksBorrowed;
   }
+
   public void addBorrowedBook(String bookName){
     booksBorrowed.add(bookName);
   }
+
   public abstract int getIdentityNumber();
+
   public int getNumberOfBorrowedBooks(){
     return this.booksBorrowed.size();
   }
@@ -71,14 +85,18 @@ abstract public class Member {
   public void makeBookRequest(Book book, ClubManager club){
     club.addMemberToBookRequest(book, this);
   }
+
   public void returnBook(Book book, ClubManager club){
     club.addReturnedBook(this, book);
   }
+
   public void removeBorrowedBook(String bookName) {
     int bookIndex = booksBorrowed.indexOf(bookName);
     booksBorrowed.remove(bookIndex);
   }
+
   public boolean collectRequestedBook(Book book, ClubManager club) {
     return club.lendBookToMember(this, book);
   }
+
 }

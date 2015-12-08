@@ -1,30 +1,20 @@
 <img src="https://dl.dropboxusercontent.com/s/cpq8wvg976bqmnf/icon.png?dl=0?raw=1" alt="book clubreadme" align="right" />
-<style>
-.markdown-here-wrapper {
-  font-family: verdana, sans;
-  font-size: 60px;
-}
 
-body {
-  font-family:verdana, sans;
-}
-</style>
 #Readers Book club
 
-### Introduction :books:
+#### Introduction :books:
 
 In a given readers club, books are distributed to members (Students or Staffs) based on the rank of the requester or the date of registration of the requester. The following conditions applies before a member gets a book;  
 
 > ###### If a Staff and a Student both request for the same book at the same time, the Staff gets the book.  
 > ###### If two Staffs request for the same book at the same time, the older Staff (one with an older date of registration)    gets access to the book.  
-> ###### If two Students place request for the same book at the same time, the Student who joined the club earlier gets the    book.  
+> ###### If two Students place request for the same book at the same time, the Student who joined the club earlier gets the book.  
 
 This project implements classes that defines properties, and behaviors of the club and its members.  
 
-## Classes and their Methods 
-#### ClubManager class  
-
-#### About: 
+#### Classes and their Methods 
+##### ClubManager class  
+ 
 This is the main class, it manages all possible interaction between books and a club members. This class knows all members and books in the club as it maintains a list of these. It also maintains a list which contains book-queues. A book-queue holds members who requested for a given book.  
 ###### Methods:
 `getNumberOfBooks()` - Returns the number of books in the library.  
@@ -48,9 +38,8 @@ club.addMemberToQueue(staff);
 `giveOutBook()` - This removes a club member from a book queue. This action also reduces the number of available bookcopies of the book that member borrowed. This project currently maintains one book in the borrowed books list, so the first member of the book queue in the borrowed books list is removed, and the number of available copies of the book that member borrowed is reduced. It returns the name of the member who got the book.
 
 
-#### Member class
-
-###### About:   
+##### Member class
+   
 This class defines behaviors and properties applicable to all club members (Students or Staffs). It is an abstract class extended by the Student and Staff classes.   
 ###### Methods:
 The properties applicable to all members are  the full name, date of birth, date of registration, phone number, and the gender. Hence, the methods defined in this class are mostly getters and setters for these properties. Other methods are   
@@ -59,17 +48,15 @@ The properties applicable to all members are  the full name, date of birth, date
 `collectRequestedBook(Book book, ClubManager club)` - returns true if the clubmanager gives the member the requested book.    
 Other methods are also defined.
 
-#### Book class
+##### Book class
 
-###### About:
 This class defines an available book in the club.  
 
 ###### Methods: 
-Methods are getters and setters of a book's properties, as well as possible actions on these properties.The properties are, the number of available copies of the book, the author, ISBN number and book title. Possible actions on these properties would be to `incrementBookCopies()` and `decrementBookCopies()`.
+Methods are getters and setters of a book's properties, as well as possible actions on these properties.The properties are, the number of available copies of the book, the author, ISBN number and book title.
 
-#### BookQueue class
+##### BookQueue class
 
-###### About:
 This class defines a book's queue. It is what is stored in the borrowed books list of the *`ClubManager`* class. When a member borrows a book, that member is pushed to the appropriate book queue for that book. The book queues are sorted based on the comparator implemented by the `MemberComparator` class.
 
 ###### Methods:
@@ -79,21 +66,19 @@ The following methods are defined
 `isQueueItem(Member member)`
 `getMember()` - removes the first member from the queue, thereby reducing the size of the queue.  
 
-#### MemberComparator  class
+##### MemberComparator  class
 
-###### About:
+
 This class implements a comparator interface for sorting items on a queue. Members are sorted by their rank (Staff or Student), or date of registration. 
 
 ###### Method:
 Overrides the `compare` method of the `Comparator` interface.
 
-#### Staff class
+##### Staff class
 
-###### About:
 This class is extends `Member` class. It defines extra properties and methods specific to Staff members of the readers club. The extra methods are getters and setters for the staff's identity number.
 
- #### Student class
+##### Student class
 
-###### About:
 This class is similar to the Staff class. But unlike the `Staff` class, it defines getters and setters for Student specific properties. These properties includes the Student's Identity number and the student's class.
 

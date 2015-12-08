@@ -19,4 +19,5 @@ public class Staff extends Member {
   public int getIdentityNumber() {
     return this.staffNumber;
   }
+
 }
