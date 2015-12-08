@@ -24,6 +24,7 @@ public class ClubManager {
       clubBooks.add(book);
     }
   }
+
   public void addBooks(ArrayList<Book> books) {
     clubBooks.addAll(books);
   }
@@ -33,6 +34,7 @@ public class ClubManager {
       clubMembers.add(member);
     }
   }
+
   public void addMembers(ArrayList<Member> members) {
     clubMembers.addAll(members);
   }
@@ -40,6 +42,7 @@ public class ClubManager {
   public int getNumberOfBooks() {
     return clubBooks.size();
   }
+
   public int getNumberOfMembers() {
     return clubMembers.size();
   }
@@ -47,6 +50,7 @@ public class ClubManager {
   public ArrayList<Book> getClubBooks() {
     return this.clubBooks;
   }
+
   public ArrayList<Member> getClubMembers() {
     return this.clubMembers;
   }
@@ -85,6 +89,7 @@ public class ClubManager {
     }
     return isMember;
   }
+
   private boolean isClubBook(Book book) {
     boolean isClubBook = false;
     if(getNumberOfBooks() > 0) {
@@ -107,6 +112,7 @@ public class ClubManager {
     }
     return isLendingSuccessful;
   }
+
   private Boolean isRequestMade(Member member, Book book) {
     Boolean requester = false;
     BookQueue bookRequests = borrowedBooks.get(book.getIsbnNumber());
@@ -118,16 +124,21 @@ public class ClubManager {
     }
     return requester;
   }
+
   private boolean isBookBorrowed(Book book){
     return borrowedBooks.containsKey(book.getIsbnNumber());
   }
+
   private BookQueue getBookRequest(Book book) {
     return borrowedBooks.get(book.getIsbnNumber());
   }
+
   private void decrementBookCopies(Book book){
     book.decrementBookCopies();
   }
+
   private void incrementBookCopies(Book book) {book.incrementBookCopies();}
+
   public void addReturnedBook(Member member, Book book) {
     member.removeBorrowedBook(book.getBookName());
     incrementBookCopies(book);

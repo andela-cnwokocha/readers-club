@@ -19,30 +19,39 @@ public class Book {
   private void setBookName(String bookName) {
     this.bookName = bookName;
   }
+
   public String getBookName() {
     return bookName;
   }
+
   private void setAuthor(String author) {
     this.author = author;
   }
+
   public String getAuthor() {
     return author;
   }
+
   private void setBookCopies(Integer numbOfBookCopies) {
     this.numberOfBookCopies = numbOfBookCopies;
   }
+
   public int getNumberOfBookCopies() {
     return numberOfBookCopies;
   }
+
   private void setIsbnNumber(String isbnNumber) {
     this.isbnNumber = isbnNumber;
   }
+
   public String getIsbnNumber() {
     return isbnNumber;
   }
+
   public void incrementBookCopies() {
     numberOfBookCopies++;
   }
+
   public void decrementBookCopies() {
     if(this.numberOfBookCopies > 0)
       numberOfBookCopies--;

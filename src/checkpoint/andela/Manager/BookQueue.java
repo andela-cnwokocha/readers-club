@@ -17,6 +17,7 @@ public class BookQueue {
   public PriorityQueue<Member> getBookQue() {
     return bookQue;
   }
+
   public void setBookQueue(PriorityQueue<Member> bookQueue) {
     this.bookQue = bookQueue;
   }
@@ -24,6 +25,7 @@ public class BookQueue {
   public void addToQueue(Member member) {
     this.bookQue.add(member);
   }
+
   public int getSizeOfQueue() {
     return this.bookQue.size();
   }
@@ -31,6 +33,7 @@ public class BookQueue {
   public Member getMember(){
      return bookQue.remove();
   }
+
   public boolean isQueueItem(Member member) {
     boolean isQueueItem = false;
     Iterator<Member> members = this.bookQue.iterator();
@@ -41,4 +44,5 @@ public class BookQueue {
     }
     return isQueueItem;
   }
+
 }
