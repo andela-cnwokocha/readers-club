@@ -6,22 +6,22 @@ import checkpoint.andela.main.*;
  * Created by chidi on 12/3/15.
  */
 public class Student extends Member{
-  private int studentID;
-  private String schoolClass;
+  private int studentid;
+  private String schoolclass;
 
-  public Student(String fullname, char gender, String dateofbirth, String phoneNumber, int studentID, String classroom) {
-    super(fullname, gender, dateofbirth, phoneNumber);
-    this.studentID = studentID;
-    this.schoolClass = classroom;
+  public Student(String fullname, char gender, String dateofbirth, String phonenumber, int studentid, String classroom) {
+    super(fullname, gender, dateofbirth, phonenumber);
+    this.studentid = studentid;
+    this.schoolclass = classroom;
   }
 
   public String getStudentClass() {
-    return schoolClass;
+    return schoolclass;
   }
-  public void setStudentClass(String studentClass) {
-    this.schoolClass = studentClass;
+  public void setStudentClass(String studentclass) {
+    this.schoolclass = studentclass;
   }
   public int getIdentityNumber() {
-    return this.studentID;
+    return this.studentid;
   }
 }

@@ -5,19 +5,19 @@ import checkpoint.andela.main.*;
  * Created by chidi on 12/3/15.
  */
 public class Staff extends Member {
-  private Integer staffNumber;
+  private Integer staffnumber;
 
-  public Staff(String fullName, char gender, String dateOfBirth, String phoneNumber, Integer identityNumber) {
+  public Staff(String fullName, char gender, String dateOfBirth, String phoneNumber, int identitynumber) {
     super(fullName, gender, dateOfBirth, phoneNumber);
-    this.staffNumber = identityNumber;
+    this.staffnumber = identitynumber;
   }
 
   public void setStaffNumber(Integer staffnumber) {
-    this.staffNumber = staffnumber;
+    this.staffnumber = staffnumber;
   }
 
   public int getIdentityNumber() {
-    return this.staffNumber;
+    return this.staffnumber;
   }
 
 }

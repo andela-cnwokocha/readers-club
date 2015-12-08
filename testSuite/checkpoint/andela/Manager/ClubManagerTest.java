@@ -2,7 +2,6 @@ package checkpoint.andela.Manager;
 
 import checkpoint.andela.main.*;
 import org.junit.*;
-import java.util.*;
 import static org.junit.Assert.*;
 import checkpoint.andela.members.*;
 
@@ -205,15 +204,16 @@ public class ClubManagerTest {
     Student student2 = new Student("Bayero", 'F', "51 09", "0800108333", 10, "JSS3");
 
     // array of members to be added to the list of members
-    Thread.sleep(200);
-    staff1.setDateOfReg();
-    student2.setDateOfReg();
 
     rhodesClub.addMember(staff1);
     rhodesClub.addMember(staff2);
     rhodesClub.addMember(student1);
     rhodesClub.addMember(student2);
     rhodesClub.addBook(book);
+
+    Thread.sleep(200);
+    staff1.setDateOfReg();
+    student2.setDateOfReg();
 
     rhodesClub.addMemberToBookRequest(book, staff1);
     rhodesClub.addMemberToBookRequest(book, staff2);
@@ -222,7 +222,19 @@ public class ClubManagerTest {
 
     assertTrue(rhodesClub.getNumberOfBorrowedBooks() == 1);
     assertTrue(rhodesClub.getBookRequestSize(book)== 4);
-    assertTrue(rhodesClub.lendBookToMember(staff2, book));
-    assertFalse(rhodesClub.lendBookToMember(student2, book));
+    assertTrue(book.getNumberOfBookCopies() == 3);
+
+    Member member = rhodesClub.lendBookToMember(book);
+    assertSame(member.getName(), "Bosun" );
+    member.setGender('M');
+
+    assertTrue(book.getNumberOfBookCopies() == 2);
+
+    rhodesClub.setBookCopies(book, 5);
+
+    assertTrue(rhodesClub.getBookRequestSize(book)== 3);
+    rhodesClub.returnBook(book);
+
+    assertTrue(book.getNumberOfBookCopies() == 6);
   }
 }

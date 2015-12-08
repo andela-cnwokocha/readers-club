@@ -8,36 +8,35 @@ import checkpoint.andela.Manager.*;
  * Created by chidi on 12/3/15.
  */
 abstract public class Member {
-  private String fullName;
+  private String fullname;
   private char gender;
-  private String dateOfBirth;
-  private String phoneNumber;
-  private Date dateOfReg;
-  private ArrayList<String> booksBorrowed;
+  private String dateofbirth;
+  private String phonenumber;
+  private Date dateofreg;
 
 
-  public Member(String fullName, char gender, String dateOfBirth, String phoneNumber) {
-    this.fullName = fullName;
+  public Member(String fullname, char gender, String dateofbirth, String phonenumber) {
+    this.fullname = fullname;
     this.gender = gender;
-    this.dateOfBirth = dateOfBirth;
-    this.phoneNumber = phoneNumber;
-    this.dateOfReg = new Date();
+    this.dateofbirth = dateofbirth;
+    this.phonenumber = phonenumber;
+    this.dateofreg = new Date();
   }
 
   public String getName() {
-    return fullName;
+    return fullname;
   }
 
-  public void setName(String memberName) {
-    this.fullName = memberName;
+  public void setName(String membername) {
+    this.fullname = membername;
   }
 
   public void setDateOfReg() {
-    dateOfReg = new Date();
+    dateofreg = new Date();
   }
 
   public Date getDateOfReg() {
-    return dateOfReg;
+    return dateofreg;
   }
 
   public void setGender(char gender) {
@@ -48,55 +47,22 @@ abstract public class Member {
     return gender;
   }
 
-  public void setDateOfBirth(String dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
+  public void setDateOfBirth(String dateofbirth) {
+    this.dateofbirth = dateofbirth;
   }
 
   public String getDateOfBirth() {
-    return dateOfBirth;
+    return dateofbirth;
   }
 
   public void setPhoneNumber(String phonenumber) {
-    this.phoneNumber = phonenumber;
+    this.phonenumber = phonenumber;
   }
 
   public String getPhoneNumber() {
-    return phoneNumber;
-  }
-
-  public void setBooksBorrowed(ArrayList<String> booksborrowed) {
-    this.booksBorrowed = booksborrowed;
-  }
-
-  public ArrayList<String> getBooksBorrowed() {
-    return booksBorrowed;
-  }
-
-  public void addBorrowedBook(String bookName){
-    booksBorrowed.add(bookName);
+    return phonenumber;
   }
 
   public abstract int getIdentityNumber();
-
-  public int getNumberOfBorrowedBooks(){
-    return this.booksBorrowed.size();
-  }
-
-  public void makeBookRequest(Book book, ClubManager club){
-    club.addMemberToBookRequest(book, this);
-  }
-
-  public void returnBook(Book book, ClubManager club){
-    club.addReturnedBook(this, book);
-  }
-
-  public void removeBorrowedBook(String bookName) {
-    int bookIndex = booksBorrowed.indexOf(bookName);
-    booksBorrowed.remove(bookIndex);
-  }
-
-  public boolean collectRequestedBook(Book book, ClubManager club) {
-    return club.lendBookToMember(this, book);
-  }
 
 }
