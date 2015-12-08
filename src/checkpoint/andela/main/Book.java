@@ -4,24 +4,24 @@ package checkpoint.andela.main;
  * Created by chidi on 12/3/15.
  */
 public class Book {
-  private String bookName;
+  private String bookname;
   private String author;
-  private Integer numberOfBookCopies = 0;
-  private String isbnNumber;
+  private Integer numberofbookcopies = 0;
+  private String isbnnumber;
 
-  public Book(String bookName, String author, int numberofbookcopies, String isbnNumber) {
-    this.bookName = bookName;
+  public Book(String bookname, String author, int numberofbookcopies, String isbnnumber) {
+    this.bookname = bookname;
     this.author = author;
-    this.numberOfBookCopies = numberofbookcopies;
-    this.isbnNumber = isbnNumber;
+    this.numberofbookcopies = numberofbookcopies;
+    this.isbnnumber = isbnnumber;
   }
 
-  private void setBookName(String bookName) {
-    this.bookName = bookName;
+  private void setBookName(String bookname) {
+    this.bookname = bookname;
   }
 
   public String getBookName() {
-    return bookName;
+    return bookname;
   }
 
   private void setAuthor(String author) {
@@ -32,28 +32,28 @@ public class Book {
     return author;
   }
 
-  private void setBookCopies(Integer numbOfBookCopies) {
-    this.numberOfBookCopies = numbOfBookCopies;
+  public void setBookCopies(Integer numbOfbookcopies) {
+    this.numberofbookcopies = numbOfbookcopies;
   }
 
   public int getNumberOfBookCopies() {
-    return numberOfBookCopies;
+    return numberofbookcopies;
   }
 
-  private void setIsbnNumber(String isbnNumber) {
-    this.isbnNumber = isbnNumber;
+  private void setIsbnNumber(String isbnnumber) {
+    this.isbnnumber = isbnnumber;
   }
 
   public String getIsbnNumber() {
-    return isbnNumber;
+    return isbnnumber;
   }
 
   public void incrementBookCopies() {
-    numberOfBookCopies++;
+    numberofbookcopies++;
   }
 
   public void decrementBookCopies() {
-    if(this.numberOfBookCopies > 0)
-      numberOfBookCopies--;
+    if(this.numberofbookcopies > 0)
+      numberofbookcopies--;
   }
 }

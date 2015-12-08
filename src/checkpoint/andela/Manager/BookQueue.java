@@ -7,36 +7,32 @@ import java.util.*;
  * Created by chidi on 12/6/15.
  */
 public class BookQueue {
-  private PriorityQueue<Member> bookQue;
+  private PriorityQueue<Member> bookque;
 
   public BookQueue() {
     Comparator compareMembers = new MembersComparator();
-    this.bookQue = new PriorityQueue<Member>(10, compareMembers);
+    this.bookque = new PriorityQueue<Member>(10, compareMembers);
   }
 
   public PriorityQueue<Member> getBookQue() {
-    return bookQue;
-  }
-
-  public void setBookQueue(PriorityQueue<Member> bookQueue) {
-    this.bookQue = bookQueue;
+    return bookque;
   }
 
   public void addToQueue(Member member) {
-    this.bookQue.add(member);
+    this.bookque.add(member);
   }
 
   public int getSizeOfQueue() {
-    return this.bookQue.size();
+    return this.bookque.size();
   }
 
   public Member getMember(){
-     return bookQue.remove();
+     return bookque.remove();
   }
 
   public boolean isQueueItem(Member member) {
     boolean isQueueItem = false;
-    Iterator<Member> members = this.bookQue.iterator();
+    Iterator<Member> members = this.bookque.iterator();
     while(members.hasNext()){
       if(members.next().getIdentityNumber()== member.getIdentityNumber()){
         isQueueItem = true;
