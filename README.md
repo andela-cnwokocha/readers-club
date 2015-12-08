@@ -62,7 +62,7 @@ Methods are getters and setters of a book's properties, as well as possible acti
 
 This class defines a book's queue. It is what is stored in the borrowed books list of the *`ClubManager`* class. When a member borrows a book, that member is pushed to the appropriate book queue for that book. The book queues are sorted based on the comparator implemented by the `MemberComparator` class.
 
-Methods:
+###### Methods:
 
 The following methods are defined
 `getSizeOfQueue()` - returns the size of the queue. This is the number of members in the queue.  
@@ -75,7 +75,7 @@ The following methods are defined
 
 This class implements a comparator interface for sorting items on a queue. Members are sorted by their rank (Staff or Student), or date of registration. 
 
-Method:
+###### Method:
 
 Overrides the `compare` method of the `Comparator` interface.
 
